@@ -1,0 +1,132 @@
+{
+  "name": "StudyWithMe",
+  "theme_color_map": {
+    "KEYBOARD": [
+      "#d16d7e",
+      "#FFFFFF"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#d16d7e",
+      "#84f473"
+    ],
+    "HEADER_PRIMARY": [
+      "#bf5a6b",
+      "#FFFFFF"
+    ],
+    "HEADER_SECONDARY": [
+      "#de8594",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#bf5a6b",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#782828",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#ed7779",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MENTIONED_HOVER": [
+      "#bf5a6b",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#782828",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#e8909f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#de8594",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "#634243",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "#634243",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#634243",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "#634243",
+      "#FFFFFF"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#e8909f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#e8909f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#de8594",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#de8594",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#de8594",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#e8909f",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#782828",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MENTIONED": [
+      "#d96c6c",
+      "#FFFFFF"
+    ],
+    "TEXT_NORMAL": [
+      "#ffffff",
+      "#FFFFFF"
+    ],
+    "TEXT_MUTED": [
+      "#b54e4e",
+      "#FFFFFF"
+    ],
+    "TEXT_LINK": [
+      "#de6666",
+      "#FFFFFF"
+    ],
+    "TEXT_DANGER": [
+      "#c48787",
+      "#FFFFFF"
+    ]
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#782828"
+  },
+  "colours": {
+    "PRIMARY_DARK": "#a53a3a",
+    "PRIMARY_DARK_100": "#f2baba",
+    "PRIMARY_DARK_200": "#f56c6c",
+    "PRIMARY_DARK_300": "#f56c6c",
+    "PRIMARY_DARK_360": "#824e4e",
+    "PRIMARY_DARK_400": "#f56c6c",
+    "PRIMARY_DARK_500": "#3cb055",
+    "PRIMARY_DARK_600": "#e89e9e",
+    "PRIMARY_DARK_630": "#281d1d",
+    "PRIMARY_DARK_700": "#281d1d",
+    "PRIMARY_DARK_800": "#e89e9e",
+    "PRIMARY_DARK_900": "#ff7a7a",
+    "BRAND_NEW": "#bf5e5e",
+    "WHITE": "#c94949"
+  }
+}
