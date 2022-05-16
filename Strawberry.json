@@ -1,0 +1,111 @@
+{
+  "name": "Strawberry",
+  "author": "Felix#0236",
+  "theme_color_map": {
+    "KEYBOARD": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#202020",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#222222",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#111111",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#202020",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#151515",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#fce3e3",
+      "#FFFFFF"
+    ],
+    "HEADER_PRIMARY": [
+      "#fce3e3",
+      "#FFFFFF"
+    ],
+    "HEADER_SECONDARY": [
+      "#fc4454",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#f2c2c2",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#aaaaaa",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#aaaaaa",
+      "#FFFFFF"
+    ],
+    "TEXT_LINK": [
+      "#cf2929",
+      "#FFFFFF"
+    ],
+    "TEXT_MUTED": [
+      "#ffffff",
+      "#FFFFFF"
+    ],
+    "TEXT_NORMAL": [
+      "#fce3e3",
+      "#FFFFFF"
+    ]
+  },
+  "colours": {
+    "PRIMARY_DARK": "#fce3e3",
+    "PRIMARY_DARK_100": "#fce3e3",
+    "PRIMARY_DARK_300": "#fce3e3",
+    "PRIMARY_DARK_360": "#cccccc",
+    "PRIMARY_DARK_400": "#fc4454",
+    "PRIMARY_DARK_500": "#fc4454",
+    "PRIMARY_DARK_600": "#111111",
+    "PRIMARY_DARK_630": "#353535",
+    "PRIMARY_DARK_700": "#353535",
+    "PRIMARY_DARK_800": "#000000",
+    "BRAND_NEW": "#fc4454",
+    "WHITE": "#fce3e3"
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#121212"
+  }
+}
