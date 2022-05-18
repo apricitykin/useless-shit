@@ -11,7 +11,7 @@
       "#FFFFFF"
     ],
     "BACKGROUND_SECONDARY": [
-      "#202020",
+      "#ffffff",
       "#FFFFFF"
     ],
     "BACKGROUND_SECONDARY_ALT": [
@@ -35,15 +35,15 @@
       "#FFFFFF"
     ],
     "BACKGROUND_MOBILE_PRIMARY": [
-      "#111111",
+      "#1111111",
       "#FFFFFF"
     ],
     "BACKGROUND_MOBILE_SECONDARY": [
-      "#202020",
+      "#000000",
       "#FFFFFF"
     ],
     "BACKGROUND_MODIFIER_ACCENT": [
-      "#151515",
+      "#000000",
       "#FFFFFF"
     ],
     "BACKGROUND_MODIFIER_ACTIVE": [
