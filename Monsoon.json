@@ -22,20 +22,20 @@
       "#4f5660"
     ],
     "TEXT_NORMAL": [
-      "#FBFBFB",
-      "#2e3338"
+      "#FFFFFF",
+      "#FFFFFF"
     ],
     "TEXT_MUTED": [
-      "#B6B6B6",
-      "#747f8d"
+      "#FFFFFF",
+      "#FFFFFF"
     ],
     "INTERACTIVE_NORMAL": [
-      "#c8c8c8",
-      "#4f5660"
+      "#5e2abf",
+      "#5e2abf"
     ],
     "INTERACTIVE_HOVER": [
-      "#dcddde",
-      "#2e3338"
+      "#ced2d6",
+      "#ced2d6"
     ],
     "INTERACTIVE_ACTIVE": [
       "#ffffff",
@@ -54,8 +54,8 @@
       "#f2f3f5"
     ],
     "BACKGROUND_SECONDARY_ALT": [
-      "#2a1858",
-      "#ebedef"
+      "#30196b",
+      "#30196b"
     ],
     "BACKGROUND_TERTIARY": [
       "#0b041b",
@@ -70,8 +70,8 @@
       "#FFFFFF"
     ],
     "BACKGROUND_MOBILE_PRIMARY": [
-      "#211742",
-      "#f8f9f9"
+      "#281b52",
+      "#281b52"
     ],
     "BACKGROUND_MOBILE_SECONDARY": [
       "#160c2f",
@@ -114,7 +114,7 @@
       "hsla(0, 0%, 0%, 0)"
     ],
     "SCROLLBAR_AUTO_THUMB": [
-      "#2a1858",
+      "#361e73",
       "#cccccc"
     ],
     "SCROLLBAR_AUTO_TRACK": [
@@ -150,7 +150,7 @@
     "BRAND_NEW": "#5e28d7"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#0b041b"
+    "CHAT_GREY": "#150636"
   },
   "background": {
     "blur": 8,
