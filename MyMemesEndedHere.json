@@ -1,0 +1,154 @@
+{
+  "name": "MyMemesEndedHere",
+  "description": "Memes, DNA of the soul",
+  "version": "6.66",
+  "authors": [
+    {
+      "name": "Felix",
+      "id": "499287211381096458"
+    }
+  ],
+  "theme_color_map": {
+    "KEYBOARD": [
+      "#111111",
+      "#FFFFFF"
+    ],
+    "HEADER_PRIMARY": [
+      "#FBFBFB",
+      "#060607"
+    ],
+    "HEADER_SECONDARY": [
+      "#B6B6B6",
+      "#4f5660"
+    ],
+    "TEXT_NORMAL": [
+      "#FBFBFB",
+      "#2e3338"
+    ],
+    "TEXT_MUTED": [
+      "#B6B6B6",
+      "#747f8d"
+    ],
+    "TEXT_LINK": [
+      "#dbf2c7",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#c8c8c8",
+      "#4f5660"
+    ],
+    "INTERACTIVE_HOVER": [
+      "#dcddde",
+      "#2e3338"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#ffffff",
+      "#060607"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#747474",
+      "#c7ccd1"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#070707",
+      "#ffffff"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#090909",
+      "#f2f3f5"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#111111",
+      "#ebedef"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#000000",
+      "#e3e5e8"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#111111",
+      "#747f8d"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#000000",
+      "#f8f9f9"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#090909",
+      "#ffffff"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#090909",
+      "#ffffff"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "rgba(255, 255, 255, 0.02)",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "rgba(255, 255, 255, 0.02)",
+      "hsla(214, 9.9%, 50.4%, 0.08)"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "rgba(255, 255, 255, 0.03)",
+      "hsla(214, 9.9%, 50.4%, 0.16)"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "rgba(255, 255, 255, 0.04)",
+      "hsla(214, 9.9%, 50.4%, 0.24)"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#000000",
+      "hsla(240, 7.7%, 2.5%, 0.08)"
+    ],
+    "SCROLLBAR_THIN_THUMB": [
+      "#292929",
+      "hsla(217, 7.6%, 33.5%, 0.3)"
+    ],
+    "SCROLLBAR_THIN_TRACK": [
+      "transparent",
+      "hsla(0, 0%, 0%, 0)"
+    ],
+    "SCROLLBAR_AUTO_THUMB": [
+      "#2a1858",
+      "#cccccc"
+    ],
+    "SCROLLBAR_AUTO_TRACK": [
+      "rgba(0, 0, 0, 0.1)",
+      "#f2f2f2"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#111111",
+      "#ebedef"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#b6b6b6",
+      "#6a7480"
+    ]
+  },
+  "colours": {
+    "PRIMARY_DARK": "#747474",
+    "PRIMARY_DARK_100": "#FFFFFF",
+    "PRIMARY_DARK_200": "#FFFFFF",
+    "PRIMARY_DARK_300": "#B6B6B6",
+    "PRIMARY_DARK_360": "#C8C8C8",
+    "PRIMARY_DARK_500": "#111111",
+    "PRIMARY_DARK_600": "#000000",
+    "PRIMARY_DARK_630": "transparent",
+    "PRIMARY_DARK_700": "transparent",
+    "PRIMARY_DARK_800": "#090909",
+    "PRIMARY_DARK_900": "#090909"
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#000000"
+  },
+  "background": {
+    "blur": 0,
+    "url": "https://media.discordapp.net/attachments/969622676396191772/982381970447274034/E65089A3-E3BE-40B6-A64D-C033A59BFF7F.jpg",
+    "alpha": 1
+  }
+}
