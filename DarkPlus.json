@@ -82,7 +82,7 @@
       "#FFFFFF"
     ],
     "BACKGROUND_MESSAGE_HOVER": [
-      "#212121",
+      "#171717",
       "#FFFFFF"
     ],
     "BACKGROUND_MODIFIER_HOVER": [
@@ -136,14 +136,14 @@
   },
   "colours": {
     "PRIMARY_DARK": "#171717",
-    "PRIMARY_DARK_100": "#cdaef3",
-    "PRIMARY_DARK_200": "#cdaef3",
-    "PRIMARY_DARK_300": "#cdaef3",
+    "PRIMARY_DARK_100": "#171717",
+    "PRIMARY_DARK_200": "#171717",
+    "PRIMARY_DARK_300": "#171717",
     "PRIMARY_DARK_360": "#cdaef3",
-    "PRIMARY_DARK_400": "#cdaef3",
-    "PRIMARY_DARK_500": "#cdaef3",
+    "PRIMARY_DARK_400": "#171717",
+    "PRIMARY_DARK_500": "#171717",
     "PRIMARY_DARK_600": "#171717",
-    "PRIMARY_DARK_630": "#bb86fc",
+    "PRIMARY_DARK_630": "#212121",
     "PRIMARY_DARK_700": "#171717",
     "PRIMARY_DARK_800": "#171717",
     "PRIMARY_DARK_900": "#171717"
