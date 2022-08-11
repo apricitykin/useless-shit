@@ -1,0 +1,161 @@
+{
+  "name": "Hentai",
+  "version": "6.9",
+  "description": "Hentai",
+  "authors": [
+    {
+      "name": "Fel1x#2802",
+      "id": "499287211381096458"
+    }
+  ],
+  "theme_color_map": {
+    "KEYBOARD": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "HEADER_PRIMARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "HEADER_SECONDARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "TEXT_NORMAL": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "TEXT_MUTED": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_HOVER": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "INTERACTIVE_MUTED": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_ACCENT": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_FLOATING": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "#1f2026",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "SCROLLBAR_THIN_THUMB": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "SCROLLBAR_THIN_TRACK": [
+      "transparent",
+      "#FFFFFF"
+    ],
+    "SCROLLBAR_AUTO_THUMB": [
+      "#292929",
+      "#FFFFFF"
+    ],
+    "SCROLLBAR_AUTO_TRACK": [
+      "rgba(0, 0, 0, 0.1)",
+      "#FFFFFF"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "transparent",
+      "#FFFFFF"
+    ],
+    "CHANNELS_DEFAULT": [
+      "Transparent",
+      "#FFFFFF"
+    ],
+    "TEXT_LINK": [
+      "Transparent",
+      "#6c56c4"
+    ],
+    "CHANNEL_ICON": [
+      "Transparent",
+      "#6c56c4"
+    ]
+  },
+  "colours": {
+    "PRIMARY_DARK": "Transparent",
+    "PRIMARY_DARK_100": "Transparent",
+    "PRIMARY_DARK_200": "Transparent",
+    "PRIMARY_DARK_300": "Transparent",
+    "PRIMARY_DARK_360": "Transparent",
+    "PRIMARY_DARK_400": "Transparent",
+    "PRIMARY_DARK_500": "Transparent",
+    "PRIMARY_DARK_600": "Transparent",
+    "PRIMARY_DARK_630": "Transparent",
+    "PRIMARY_DARK_700": "Transparent",
+    "PRIMARY_DARK_800": "Transparent",
+    "PRIMARY_DARK_900": "Transparent",
+    "STATUS_RED": "Transparent",
+    "STATUS_GREEN": "Transparent"
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#171717"
+  },
+  "background": {
+    "blur": 1,
+    "url": "https://media.discordapp.net/attachments/996426870633545831/1006492224097353788/IMG_0203.png",
+    "alpha": 1.0
+  }
+}
