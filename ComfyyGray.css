@@ -1,0 +1,2717 @@
+/**
+* @name ComfyGray
+* @version 1.0
+* @author carrot#8812
+* @description A theme with a nice shade of gray everywhere! Its super comfy.
+* @source https://github.com/ObjectiveSlayer/ComfyGray
+* @invite not-set
+*/
+
+
+/* making it so dark and light mode are the same (since the theme is only gray) */
+
+@import url("https://stickfab.github.io/pc-fluenticons/src/fluenticons-settings.css");
+
+:root {
+    --settingsiconssize     :               18px;
+    --settingsiconsgap      :               14px;
+}
+
+
+ 
+.theme-dark,.theme-light {
+    --header-primary        :             #fff;
+    --header-secondary      :             #b9bbbe;
+    --text-normal           :             #dcddde;
+    --text-muted            :             #a3a6aa;
+    --text-link             :             #cdaef3;
+    --text-link-low-saturation:             hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+    --text-positive         :               hsl(139,calc(var(--saturation-factor, 1)*51.6%),52.2%);
+    --text-warning          :               hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger           :               hsl(359,calc(var(--saturation-factor, 1)*82%),73.9%);
+    --text-brand            :               hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --interactive-normal    :             #bb86fc;
+    --interactive-hover     :             #dcddde;
+    --interactive-active    :             #cdaef3;
+    --interactive-muted     :             #4f545c;
+    --background-primary    :             #36393f;
+    --background-secondary  :             #2f3136;
+    --background-secondary-alt:           #292b2f;
+    --background-tertiary   :             #202225;
+    --background-accent     :             #4f545c;
+    --background-floating   :             #18191c;
+    --background-nested-floating:         #2f3136;
+    --background-mobile-primary:          #36393f;
+    --background-mobile-secondary:        #2f3136;
+    --background-modifier-hover:          rgba(79,84,92,0.4);
+    --background-modifier-active:         rgba(79,84,92,0.6);
+    --background-modifier-selected:       rgba(79,84,92,0.6);
+    --background-modifier-accent:         rgba(79,84,92,0.48);
+    --info-positive-background:             hsla(139,calc(var(--saturation-factor, 1)*47.3%),43.9%,0.1);
+    --info-positive-foreground:             hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --info-positive-text    :             #fff;
+    --info-warning-background:              hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --info-warning-foreground:              hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --info-warning-text     :             #fff;
+    --info-danger-background:               hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,0.1);
+    --info-danger-foreground:               hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --info-danger-text      :             #fff;
+    --info-help-background  :               hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+    --info-help-foreground  :               hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-text        :             #fff;
+    --status-positive-background:           hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --status-positive-text  :             #fff;
+    --status-warning-background:            hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --status-warning-text   :             #000;
+    --status-danger-background:             hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --status-danger-text    :             #fff;
+    --status-danger         :               hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --status-positive       :               hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --status-warning        :               hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --button-danger-background:             hsl(359,calc(var(--saturation-factor, 1)*66.7%),54.1%);
+    --button-danger-background-hover:       hsl(359,calc(var(--saturation-factor, 1)*56.3%),40.4%);
+    --button-danger-background-active:      hsl(359,calc(var(--saturation-factor, 1)*56.4%),35.1%);
+    --button-danger-background-disabled:    hsl(359,calc(var(--saturation-factor, 1)*66.7%),54.1%);
+    --button-positive-background:           hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --button-positive-background-hover:     hsl(138,calc(var(--saturation-factor, 1)*46.8%),24.3%);
+    --button-positive-background-active:    hsl(138,calc(var(--saturation-factor, 1)*46.9%),22.2%);
+    --button-positive-background-disabled:  hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --button-secondary-background:        #4f545c;
+    --button-secondary-background-hover:  #686d73;
+    --button-secondary-background-active: #72767d;
+    --button-secondary-background-disabled:#4f545c;
+    --button-outline-danger-text:         #fff;
+    --button-outline-danger-border:         hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --button-outline-danger-background:   hsla(0,0%,100%,0);
+    --button-outline-danger-background-hover:hsl(359,calc(var(--saturation-factor, 1)*66.7%),54.1%);
+    --button-outline-danger-text-hover:   #fff;
+    --button-outline-danger-border-hover:   hsl(359,calc(var(--saturation-factor, 1)*66.7%),54.1%);
+    --button-outline-danger-background-active: hsl(359,calc(var(--saturation-factor, 1)*56.7%),48%);
+    --button-outline-danger-text-active:  #fff;
+    --button-outline-danger-border-active: hsl(359,calc(var(--saturation-factor, 1)*66.7%),54.1%);
+    --button-outline-positive-text:       #fff;
+    --button-outline-positive-border:       hsl(139,calc(var(--saturation-factor, 1)*47.3%),43.9%);
+    --button-outline-positive-background: hsla(0,0%,100%,0);
+    --button-outline-positive-background-hover: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --button-outline-positive-text-hover: #fff;
+    --button-outline-positive-border-hover: hsl(139,calc(var(--saturation-factor, 1)*47.1%),33.3%);
+    --button-outline-positive-background-active: hsl(138,calc(var(--saturation-factor, 1)*46.8%),24.3%);
+    --button-outline-positive-text-active:#fff;
+    --button-outline-positive-border-active:hsl(138,calc(var(--saturation-factor, 1)*46.8%),24.3%);
+    --button-outline-brand-text:          #fff;
+    --button-outline-brand-border:          hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+    --button-outline-brand-background:    hsla(0,0%,100%,0);
+    --button-outline-brand-background-hover:hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+    --button-outline-brand-text-hover:    #fff;
+    --button-outline-brand-border-hover:    hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
+    --button-outline-brand-background-active: hsl(235,calc(var(--saturation-factor, 1)*51.4%),52.4%);
+    --button-outline-brand-text-active:   #fff;
+    --button-outline-brand-border-active:   hsl(235,calc(var(--saturation-factor, 1)*51.4%),52.4%);
+    --button-outline-primary-text:        #fff;
+    --button-outline-primary-border:      #4f545c;
+    --button-outline-primary-background: hsla(0,0%,100%,0);
+    --button-outline-primary-background-hover: #4f545c;
+    --button-outline-primary-text-hover:  #fff;
+    --button-outline-primary-border-hover:#4f545c;
+    --button-outline-primary-background-active: #686d73;
+    --button-outline-primary-text-active: #fff;
+    --button-outline-primary-border-active: #686d73;
+    --scrollbar-thin-thumb  :             #202225;
+    --scrollbar-thin-track  :               transparent;
+    --scrollbar-auto-thumb  :             #202225;
+    --scrollbar-auto-track  :               hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
+    --scrollbar-auto-scrollbar-color-thumb:#202225;
+    --scrollbar-auto-scrollbar-color-track:#2f3136;
+    --input-background      :             #202225;
+    --input-placeholder-text:               hsl(216,calc(var(--saturation-factor, 1)*2.1%),53.9%);
+    --elevation-stroke      :               0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low         :               0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium      :               0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high        :               0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary          :             #fff;
+    --control-brand-foreground:             hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --control-brand-foreground-new:         hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --background-mentioned  :               hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover:           hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+    --background-message-hover:           rgba(4,4,5,0.07);
+    --background-message-automod:           hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,0.05);
+    --background-message-automod-hover:     hsla(359,calc(var(--saturation-factor, 1)*82.6%),59.4%,0.1);
+    --channels-default      :             #96989d;
+    --channel-icon          :             #8e9297;
+    --channel-text-area-placeholder:      #72767d;
+    --guild-header-text-shadow:             0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background:         #40444b;
+    --activity-card-background:           #202225;
+    --textbox-markdown-syntax:            #8e9297;
+    --spoiler-revealed-background:        #292b2f;
+    --spoiler-hidden-background:          #202225;
+    --deprecated-card-bg    :             rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg:        rgba(32,34,37,0.3);
+    --deprecated-store-bg   :             #36393f;
+    --deprecated-quickswitcher-input-background: #72767d;
+    --deprecated-quickswitcher-input-placeholder:hsla(0,0%,100%,0.3);
+    --deprecated-text-input-bg:           #202225;
+    --deprecated-text-input-border:       rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled:     #202225;
+    --deprecated-text-input-prefix:       #dcddde;
+}
+
+
+
+
+
+/* makes text lighter? idk */
+*:not(.markup-eYLPri strong, .bold-ia41Lc){
+    font-weight             :               320 !important;
+}
+
+
+
+
+
+/* main colors for the theme */
+:root{
+    --background-primary    :             #121212;
+    --background-secondary  :             #121212;
+    --color-brand-lighter   :             #383838;
+    
+}
+
+/* text selection colors */
+::selection{
+    color                   :             #c2c2c2;
+    background-color        :             #5f5f5f;
+}
+
+
+
+
+
+/* adds watermark */
+:root{
+    --version-number        :               "1.0";
+}
+.wordmarkWindows-2dq6rw svg {
+   display                  :               none;
+}
+.wordmarkWindows-2dq6rw::before{
+   content                  :               'ComfyGray';
+   font-size                :               13px;
+   font-weight              :               700;
+   top                      :               4px;
+   left                     :               -3px;
+   position                 :               relative;
+}
+.wordmarkWindows-2dq6rw::after{
+    content                 :               'v' var(--version-number);
+    font-size               :               11px;
+    margin-left             :               2px;
+    top                     :               4px;
+    left                    :               -3px;
+    position                :               relative;
+}
+
+
+
+
+/* user controls settings coloring */
+.panels-3wFtMD{
+    background-color        :             #1b1b1b8e;
+}
+
+
+
+
+/* removes some stupid gradient bugs */
+.form-3gdLxP::before, .children-3xh0VB:after, .option-ayUoaq:after{
+    content                 :               none;
+}
+
+
+
+
+/* channel hover things :) */
+.container-ZMc96U.themed-Hp1KC_ {
+    background-color        :             #0f0f0f;
+}
+.modeSelected-3DmyhH .content-1gYQeQ{
+    background-color        :             #1a1a1a;
+    border-radius           :               5px !important;
+}
+.modeSelected-3DmyhH .channelName-3KPsGw{
+    color                   :             rgba(255, 255, 255, 0.603);
+}
+.wrapper-NhbLHG .content-1gYQeQ{
+    border-radius           :               25px;
+}
+.wrapper-NhbLHG:hover .content-1gYQeQ{
+    transition              :               0.4s ease;
+    background-color        :             #383838a9 !important;
+    border-radius           :               5px;
+}
+.wrapper-NhbLHG:hover .channelName-3KPsGw{
+    transition              :               0.4s ease;
+    color                   :             rgb(141, 141, 141);
+}
+.content-1gYQeQ, .channelName-3KPsGw{
+    transition              :               0.4s ease;
+}
+
+
+
+
+/* wide screen settings */
+.sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh {
+    justify-content         :               unset;
+    flex                    :               unset
+}
+.contentColumn-1C7as6, .customColumn-2n-oKU, .hero-1aNo0v {
+    max-width               :               unset;
+} 
+.accountProfileCard-lbN7n- {
+    max-width               :               750px;
+}
+.notificationSettings-1U0JsJ {
+    max-width               :               45%;
+}
+.option-2eIyOn, .searchBox-pyIJJj{
+    transition              :               0.20s ease;
+}
+ 
+/* custom user profile settings made by me and my friend */
+.accountProfileCard-lbN7n- > .settingsBanner-1eDJ5w {
+    width                   :               100%;
+    height                  :               300px;
+    border-radius           :               10px;
+    filter                  :               blur(1.3px) brightness(.4);
+}
+.accountProfileCard-lbN7n- > .userInfo-regn9W, .accountProfileCard-lbN7n- > .background-3d_SjE {
+    width                   :               55%;
+    position                :               relative;
+    left                    :               6%;
+    bottom                  :               300px;
+    height                  :               100px;
+}
+.accountProfileCard-lbN7n- > .userInfo-regn9W .avatar-3mTjvZ {
+    left                    :               -30px;
+    top                     :               -10px;
+}
+.accountProfileCard-lbN7n- > .background-3d_SjE {
+    width                   :               95%;
+    left                    :               0px;
+    background-color        :             rgba(0, 0, 0, 0.26);
+    overflow-y              :               scroll;
+    overflow-x              :               hidden;
+}
+.accountProfileCard-lbN7n- > .background-3d_SjE::-webkit-scrollbar {
+    visibility              :               hidden;
+}
+.accountProfileCard-lbN7n- {
+    max-height              :               300px;
+    background-color        :               transparent;
+    width                   :               840px;
+    border-radius           :               9px;
+}
+.userInfo-regn9W {
+    margin-top              :               20px;
+}
+.fieldList-in8WkP {
+    margin-top              :               20px;
+    background-color        :               transparent;
+}
+.accountProfileCard-lbN7n- > .button-f2h6uQ {
+    position                :               relative;
+    width                   :               900px;
+    left                    :               200px;
+}
+.avatar-3mTjvZ {
+    border                  :               none;
+    background-color        :               transparent;
+}
+.profileCardUsernameRow-1bb6fi{
+    position                :               relative;
+    right                   :               55px;
+}
+.accountProfileCard-lbN7n- .button-f2h6uQ:nth-child(3){
+    position                :               relative;
+    left                    :               290px;
+}
+.accountProfileCard-lbN7n- .container-1gYwHN{
+    position                :               relative;
+    left                    :               -100%;
+    top                     :               230%;
+    margin-left             :               15px
+}
+ 
+
+
+
+/* makes all the pages(chat for example) margin */
+.sidebar-1tnWFu{
+    margin-right            :               10px;
+    margin-left             :               10px;
+    border-radius           :               15px !important;
+    height                  :               99.3%;
+}
+.container-3XgAHv{
+    margin-right            :               15px;
+    height                  :               99.4%;
+    border-radius           :               15px;
+}
+.threadSidebarOpen-1LSXvU{
+    border-radius           :               15px !important;
+}
+ .guilds-2JjMmN {
+     height: 99.%;
+     border-top-right-radius:               15px;
+     border-bottom-right-radius:            15px;
+ }
+ .tree-3agP2X{
+     border-bottom-right-radius:            15px;
+     margin-bottom          :               7.5px;
+ }
+ .chat-2ZfjoI{
+     margin-right           :               10px;
+     height                 :               99.3%;
+     border-radius          :               15px;
+ }
+.peopleColumn-1wMU14{
+    background-color        :               var(--background-primary);
+}
+.container-2cd8Mz{
+    margin-right            :               10px;
+    margin-bottom           :               7.5px;
+    border-radius           :               15px;
+}
+.peopleListItem-u6dGxF{
+    transition              :               0.5s ease;
+    margin-bottom           :               6px !important;
+    border-radius           :               25px;
+    border-color            :               transparent;
+    margin                  :               0 10px 0 20px;
+    padding                 :               16px 10px;
+}
+.pageWrapper-2PwDoS{
+    margin-right            :               10px;
+    height                  :               99.3%;
+    border-radius           :               15px;
+}
+.content-1SgpWY .applicationStore-2nk7Lo{
+    margin-right            :               10px;
+    height                  :               99.3%;
+    border-radius           :               15px;
+}
+.content-1SgpWY .applicationStore-2nk7Lo .scroller-29cQFV::-webkit-scrollbar{
+    display                 :               none;
+}
+.shaker-bevRrZ .focusLock-2tveLW .root-2s1-ri, .shaker-bevRrZ .focusLock-2tveLW .root-2s1-ri .contents-1X8z-d{
+    background-color        :             #191919 !important;
+}
+.planOptionDiscount-2nex9n, .checkbox-f1HnKB.checked-1pZh2h {
+    background-color        :             #494949 !important;
+    border-color            :             rgb(56, 56, 56) !important;
+}
+
+
+
+
+/* circle buttons modification since the original looks like dog water */
+.circleIconButton-1VxDrg{
+    transition              :               all 0.2s ease-in;
+    border-width            :               2px;
+    border-color            :             #383838;
+    border-radius           :               50%;
+    border-style            :               solid;
+}
+.circleIconButton-1VxDrg:hover{
+    border-radius           :               25px;
+    border-width            :               2px;
+    border-color            :             #ffffff;
+    border-style            :               solid;
+    transition              :               all 0.2s ease-in;
+    background-color        :             #383838;
+}
+.circleIconButton-1VxDrg:nth-child(1){
+    color                   :             #383838
+}
+.circleIconButton-1VxDrg:hover:nth-child(1){
+    color                   :             white
+}
+.tutorialContainer-2jwoiB + div .pill-1NRFie{
+    display                 :               none;
+}
+
+
+
+/* custom textbox */
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL),
+.scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL), .input-3r5zZY, .input-2g-os5  {
+    background-color        :             #303030 !important;
+    transition              :               background-color 0.2s ease, border-color 0.2s ease !important;
+    border                  :               1px solid transparent !important;
+    outline                 :               none !important;
+}
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover,
+.scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover, .input-3r5zZY:hover, .input-2g-os5  {
+    border-color            :             #5a5a5a !important;
+    background-color        :             rgb(32, 32, 32) !important;
+}
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within,
+.scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within, .input-3r5zZY:focus-within, .input-2g-os5  {
+    background-color        :             #444444c2 !important;
+    border-color            :               var(--color-brand-lighter) !important;
+}
+.scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL) {
+    border                  :               1px solid transparent;
+    border-radius           :               25px;
+}
+.input-3r5zZY{
+    border-radius           :               15px;
+    margin-bottom           :               15px;
+}
+[class="colorMuted-20987_ size12-oc4dx4 cta-25g9OT"], .container-2rCwVJ .clear-1JYfB5{
+    display                 :               none;
+}
+.searchBoxInput-P0mWHW{
+    color                   :             white !important;
+}
+/* member list hover effect */
+.item-3XjbnG, .option-ayUoaq {
+    transition              :               0.3s ease !important;
+}
+.clickable-28SzVr .layout-1qmrhw{
+    border-radius           :               25px;
+    transition              :               0.4s ease !important;
+}
+.clickable-28SzVr:hover .layout-1qmrhw {
+    border-radius           :               10px;
+}
+
+ 
+
+
+
+/* makes the edit timestamp more specific */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS, .latin24CompactTimeStamp-2pXUBq ) time::after {
+    content                 :               " (" attr(aria-label) ")";
+    color                   :               var(--text-muted);
+    font-size               :               0.625rem;
+    font-weight             :               400;
+    line-height             :               1;
+    text-transform          :               lowercase;
+}
+.edited-1v5nT8:not(.message-translate-indicator), .channelTextAreaDisabled-1p2fQv {
+    display                 :               none;
+}
+
+
+
+/* bubble messages */
+.cozyMessage-1DWF9U .contents-2MsGLg>.markup-eYLPri:not(:empty) {
+    background-color        :             rgba(44, 44, 44, 0.5);
+    display                 :               inline-block;
+    margin                  :               0;
+    max-width               :               100%;
+    width                   :               auto !important;
+    padding                 :               8px;
+    border-radius           :               20px;
+}
+.welcomeCTAButtonOuter-3pJkMq {
+    background-color        :             #191919 !important;
+    border                  :               1px solid #444444;
+    margin-top              :               5px;
+    border-radius           :               25px !important;
+    transition              :               0.5s ease;
+}
+.welcomeCTAButtonOuter-3pJkMq:hover {
+    background-color        :             #252525 !important;
+    border                  :               1px solid #444444;
+    margin-top              :               5px;
+    border-radius           :               5px !important;
+    transition              :               0.5s ease;
+}
+
+
+/* adds border radius to images */
+.imageWrapper-oMkQl4{
+    border-radius           :               10px;
+}
+ 
+ /* Settings/Deafen/Mute Buttons Animated */
+.button-12Fmur:hover .contents-3ca1mk {
+    animation               :               UserModalButtons 0.5s normal ease;
+}
+.container-YkUktl .noWrap-hBpHBz {
+    width                   :               100px;
+    opacity                 :               1;
+}
+.button-12Fmur {
+    border-radius           :               10px;transition: 0.2s;
+}
+.button-12Fmur:hover {
+    padding-bottom          :               0px;transition: 0.2s;
+}
+@keyframes UserModalButtons {
+    0% {transform           :               translateY(0px);}
+    50% {transform          :               translateY(-5px);}
+    100% {transform         :               translateY(0px);}
+}
+
+
+
+
+
+/* turns jump to present bar into a button */
+[class*="jumpToPresentBar"] {
+    display                 :               contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display                 :               none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position                :               absolute;
+    z-index                 :               1;
+    bottom                  :               24px;
+    right                   :               22px;
+    padding                 :               8px !important;
+    height                  :               auto;
+    background-color        :             #414141;
+    box-shadow              :               var(--elevation-high);
+    border-radius           :               100px;
+    display                 :               flex;
+    font-size               :               0px;
+    color                   :               transparent;
+    transition              :               font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order                   :               -1;
+    margin                  :               0px;
+    height                  :               24px;
+    width                   :               24px;
+    top                     :               auto;
+    margin-right            :               0px;
+    margin-left             :               0px;
+    color                   :             #FFFFFF;
+    transition              :               margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding                 :               8px 18px !important;
+    font-size               :               14px;
+    color                   :             #FFFFFF;
+    transition              :               font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right            :               2px;
+    margin-left             :               -6px;
+}
+
+
+
+
+/* animates popout menus */
+.emojiPicker-6YCk8a, .browser-mnQ1T7, .messagesPopoutWrap-3zryHW, .wrapper-1NB3WY, .container-3u7RcY, .container-2o3qEW, .container-2ebMPP, .userPopout-2j1gM4 {
+    animation               :               custom-menu-animation 250ms ease;
+    transform-origin        :               top;
+}
+@keyframes custom-menu-animation {
+    from {
+        transform           :               scaleY(0);
+    }
+    to {
+        transform           :               scaleY(1);
+    }
+}
+
+
+
+
+/* adjusts winbuttons */
+.item-1OdjEX {
+    transition              :               0.3s ease;
+}
+.winButton-3UMjdg{
+    right                   :               8.5px;
+    border-radius           :               5px;
+    transition              :               0.5s ease;
+    margin-right            :               3px;
+    margin-top              :               4px;
+}
+.typeWindows-2-g3UY{
+    margin-bottom           :               5px;
+}
+
+
+
+
+/* spin animated on home button click */
+@keyframes spin {
+    0% {
+        transform           :               rotate(0deg);
+    }
+    20% {
+        transform           :               rotate(-20deg);
+    }
+    70% {
+        transform           :               rotate(380deg);
+    }
+    100% {
+        transform           :               rotate(360deg);
+    }
+}
+.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+    animation               :               spin 0.8s ease;
+}
+
+
+
+
+
+
+ 
+ 
+/* Game activity toggle */
+button[aria-label="Hide Game Activity"],
+button[aria-label="Show Game Activity"] {
+    border-radius           :               10px 10px 0px 0px !important;
+}
+
+button[aria-label="Hide Game Activity"]:hover,
+button[aria-label="Show Game Activity"]:hover {
+    border-radius           :               50% !important;
+}
+
+button[aria-label="Hide Game Activity"]::after,
+button[aria-label="Show Game Activity"]::after {
+    content                 :               "";
+    position                :               absolute;
+    width                   :               50px;
+    height                  :               50px;
+    left                    :               0px;
+    z-index                 :               -101;
+    border-radius           :               10px 10px 0px 0px !important;
+}
+ 
+button[aria-label="Hide Game Activity"]::before,
+button[aria-label="Show Game Activity"]::before {
+    content                 :               "";
+    position                :               absolute;
+    width                   :               70px;
+    height                  :               70px;
+    left                    :               -10px;
+    z-index                 :               -101;
+    top                     :               -20px;
+}
+.tree-3agP2X, .scroller-3X7KbA {
+    background-color        :             #121212;
+}
+.platform-osx .scroller-3X7KbA, .platform-win .scroller-3X7KbA{
+    padding-top             :               10px;
+}
+ 
+
+
+
+
+/* typing/reply bar modifications */
+.typing-2J1mQU{
+    bottom                  :               98.5%;
+    border-radius           :               30px;
+    background-color        :             #383838;
+    margin-bottom           :               3px;
+    width                   :               97.6%;
+    left                    :               18px;
+    max-width               :               97.6%;
+}
+.replyBar-1oi75v{
+    background-color        :             #383838;
+    border-radius           :               30px;
+    margin-bottom           :               3px;
+}
+.cooldownWrapper-2k1jHK{
+    position                :               relative;
+    right                   :               1%;
+}
+.form-3gdLxP{
+    top                     :               13px;
+    margin-top              :               -10px;
+}
+.form-3gdLxP{
+    margin-top              :               19px;
+}
+.scrollerSpacer-3AqkT9{
+    height                  :               1px;
+}
+
+
+
+
+
+/* mentioned messages */
+.mentioned-Tre-dv{
+    transition              :               0.5s ease;
+    background-color        :             #171717;
+}
+.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover{
+    transition              :               0.5s ease;
+    background-color        :             #1d1d1d;
+}
+.mentioned-Tre-dv:hover:before{
+    transition              :               0.5s ease;
+    background-color        :             #575757;
+}
+.mentioned-Tre-dv:before{
+    transition              :               0.5s ease;
+    background-color        :             #383838;
+}
+
+
+
+/* folder coloring */
+.closedFolderIconWrapper-3tRb2d, .folderIconWrapper-1oRIZr{
+    background-color        :             #444444 !important;
+}
+[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z"]{
+    color                   :             rgba(255, 255, 255, 0.63);
+}
+
+
+
+/* reactions */
+.reaction-2A2y9y.reactionMe-3I9gFK{
+    background-color        :             #1d1d1d;
+    border-color            :             #575757;
+}
+.autocomplete-3NRXG8 {
+    background-color        :             #1d1d1d !important;
+}
+.autocomplete-3NRXG8 .selected-3H3-RC{
+    transition              :               0.5s ease;
+    background-color        :             #262626;
+}
+
+
+
+
+
+/* focus look popouts modifying */
+#app-mount .root-g14mjS{
+    background-color        :             #0f0f0f;
+}
+.focusLock-2tveLW .flex-2S1XBF{
+    background-color        :             #171717;
+}
+.root-cw9rWQ .option-1O-Hwt{
+    background-color        :             #171717;
+    transition              :               0.5s ease;
+    margin-bottom           :               10px;
+    border                  :               none;
+    border-radius           :               20px;
+}
+.root-cw9rWQ .option-1O-Hwt:hover{
+    transition: 0.5s ease;
+    background-color        :             #333333;
+}
+.root-g14mjS .header-1zd7se{
+    margin-bottom           :               20px;
+}
+.content-2hZxGK .problemInfo-1QppuA .root-cw9rWQ{
+    background-color        :               transparent;
+}
+.checkbox-f1HnKB {
+    transition              :               0.3s ease;
+}
+
+
+
+/* user setting buttons */
+.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+    background-color        :             #222222;
+}
+.lookFilled-yCfaCM .contents-3ca1mk, .lookInverted-2mDUMi .contents-3ca1mk, .lookLink-15mFoz .contents-3ca1mk, .lookOutlined-3yKVGo .contents-3ca1mk{
+    overflow                :               visible;
+}
+.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+    background-color        :             #333333;
+}
+.userSettingsSecurity-2kODPN .isEnabled-20V6lG{
+    color                   :             #2a7742;
+}
+.messagesWrapper-RpOMA3 ::-webkit-scrollbar{
+    display                 :               none;
+}
+
+
+
+
+
+/* honestly have no clue man */
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub, #bd-pub-button:hover{
+    background-color        :             #444444 !important;
+}
+#bd-pub-button{
+    border                  :               none;
+}
+.channel-1Shao0 .interactive-1vLZ_I {
+    transition              :               0.5s ease;
+}
+.channel-1Shao0 .interactive-1vLZ_I:hover{
+    transition              :               0.5s ease;
+}
+.muted-3KGUWb:hover {
+    background-color        :             #1d1d1d !important;
+}
+.inner-NQg18Y .buttons-uaqb-5{
+    right                   :               5px;
+}
+
+
+
+/* status picker */
+#status-picker{
+    margin-left             :               10px;
+}
+#status-picker .scrollerBase-_bVAAt {
+  display                   :               grid;
+}
+
+#status-picker>div>*:not(#status-picker-online, #status-picker-idle, #status-picker-dnd, #status-picker-invisible) {
+    grid-column             :               1/5;
+}
+
+#status-picker .item-1OdjEX:not(#status-picker-custom-status, #status-picker-switch-account) .status-3TYC5W {display: none;}
+#status-picker .description-3Cwkxk {
+    display                 :               none;
+}
+#status-picker .separator-1So4YB {
+    display                 :               none;
+}
+
+#status-picker .status-3TYC5W {
+  margin-left               :               8px;
+}
+
+#status-picker .customEmojiPlaceholder-3mRJqA,
+#status-picker .switchAccountsIcon-36imMT {
+  margin-left               :               1px;
+}
+
+#status-picker .mask-2Me5HY:not(.status-0f5Sr2 .status-2DiCMd) {
+  height                    :               78%; 
+  width                     :               78%;
+  margin-left               :               3px;
+}
+
+#status-picker-online,
+#status-picker-idle,
+#status-picker-dnd {
+  margin-right              :               20px;
+}
+
+#status-picker-online .statusItem-2hiCNB:not(.status-0f5Sr2 .status-2DiCMd),
+#status-picker-idle .statusItem-2hiCNB:not(.status-0f5Sr2 .status-2DiCMd),
+#status-picker-dnd .statusItem-2hiCNB:not(.status-0f5Sr2 .status-2DiCMd),
+#status-picker-invisible .statusItem-2hiCNB:not(.status-0f5Sr2 .status-2DiCMd) {
+  padding                   :               8px 8px;
+}
+
+#status-picker-custom-status .statusItem-2hiCNB:not(.status-0f5Sr2 .status-2DiCMd) {
+  padding                   :               6px 8px;
+}
+
+#status-picker .customEmojiPlaceholder-3mRJqA:not(.status-0f5Sr2 .status-2DiCMd) {
+  background-image          :               none;
+  background-color          :               var(--interactive-normal);
+  mask                      :               var(--icon) center/contain no-repeat;
+  -webkit-mask              :               var(--icon) center/contain no-repeat;
+  width                     :               22px;
+  height                    :               22px;
+  --icon                    :               url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Crect fill='none' height='24' width='24'/%3E%3Cpath d='M11.99,2C6.47,2,2,6.48,2,12s4.47,10,9.99,10C17.52,22,22,17.52,22,12S17.52,2,11.99,2z M8.5,8C9.33,8,10,8.67,10,9.5 S9.33,11,8.5,11S7,10.33,7,9.5S7.67,8,8.5,8z M16.75,14.75C15.8,16.39,14.03,17.5,12,17.5s-3.8-1.11-4.75-2.75 C7.06,14.42,7.31,14,7.69,14h8.62C16.7,14,16.94,14.42,16.75,14.75z M15.5,11c-0.83,0-1.5-0.67-1.5-1.5S14.67,8,15.5,8 S17,8.67,17,9.5S16.33,11,15.5,11z'/%3E%3C/svg%3E");
+}
+
+#status-picker .colorDefault-CDqZdO.focused-3qFvc8 .customEmojiPlaceholder-3mRJqA {
+  background                :               var(--interactive-active);
+}
+
+#status-picker .switchAccountsIcon-36imMT:not(.status-0f5Sr2 .status-2DiCMd) {
+  background-image          :               none;
+  background-color          :               var(--interactive-normal);
+  mask                      :               var(--icon) center/contain no-repeat;
+  -webkit-mask              :               var(--icon) center/contain no-repeat;
+  width                     :               22px;
+  height                    :               22px;
+  --icon                    :               url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cg%3E%3Crect fill='none' height='24' width='24'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M17,20H4V7c0-0.55-0.45-1-1-1S2,6.45,2,7v13c0,1.1,0.9,2,2,2h13c0.55,0,1-0.45,1-1S17.55,20,17,20z M20,2H8 C6.9,2,6,2.9,6,4v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C22,2.9,21.1,2,20,2z M14,5c1.66,0,3,1.34,3,3c0,1.66-1.34,3-3,3 s-3-1.34-3-3C11,6.34,12.34,5,14,5z M7.76,16c1.47-1.83,3.71-3,6.24-3s4.77,1.17,6.24,3H7.76z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#status-picker .colorDefault-CDqZdO.focused-3qFvc8 .switchAccountsIcon-36imMT {
+  background                :               var(--interactive-active);
+}
+
+#status-picker-custom-status,
+#status-picker-switch-account,
+#status-picker-switch-account--manage-accounts {
+  margin-top                :               12px !important;
+}
+
+#status-picker-custom-status::after {
+  content                   :               "";
+  background                :               var(--background-modifier-accent);
+  position                  :               absolute;
+  top                       :               -6px;
+  left                      :               2px;
+  width                     :               98%;
+  height                    :               1px;
+}
+
+#status-picker-switch-account::after {
+  content                   :               "";
+  background                :               var(--background-modifier-accent);
+  position                  :               absolute;
+  top                       :               -6px;
+  left                      :               2px;
+  width                     :               98%;
+  height                    :               1px;
+}
+
+#status-picker-switch-account--manage-accounts::after {
+  content                   :               "";
+  background                :               var(--background-modifier-accent);
+  position                  :               absolute;
+  top                       :               -7px;
+  left                      :               2px;
+  width                     :               98%;
+  height                    :               1px;
+}
+
+#status-picker-dnd::after,
+#status-picker-idle::after,
+#status-picker-online::after {
+  content                   :               "";
+  background                :               var(--background-modifier-accent);
+  position                  :               absolute;
+  top                       :               6px;
+  left                      :               50px;
+  width                     :               1px;
+  height                    :               24px;
+}
+#status-picker:not(.status-0f5Sr2 .status-2DiCMd){
+  width                     :               235px;
+  left                      :               35px;
+  top                       :               15px;
+  border-bottom-left-radius :               0;
+}
+#status-picker{
+   background-color         :             rgba(39, 39, 39, 0.603) !important;
+   backdrop-filter          :               blur(6px);
+   box-shadow               :               none !important;
+}
+
+
+
+
+/* add friends button/ tab styling */
+[aria-controls="add_friend-tab"]{
+    transition              :               0.5s ease;
+    background-color        :             #444444 !important;
+}
+[aria-controls="add_friend-tab"]:hover{
+    transition              :               0.5s ease;
+    background-color        :             #292B2E !important;
+}
+.form-2oOOG9 .content-2hZxGK  .flex-2S1XBF {
+    background-color        :               transparent;
+}
+.itemCard-3Etziu {
+    transition              :               0.5s ease;
+}
+.itemCard-3Etziu  .body-16rSsp {
+    background-color        :               transparent;
+}
+.addFriendInputWrapper-kkoSV9{
+    transition              :               0.5s ease;
+    border-radius           :               25px;
+    background-color        :             #252525;
+}
+.addFriendInputWrapper-kkoSV9:hover{
+    transition              :               0.5s ease;
+    background-color        :             #121212;
+    border                  :               1px solid #444444;
+}
+.addFriendInputWrapper-kkoSV9:focus-within{
+    transition: 0.5s ease;
+    border                  :               1px solid #6d6d6d !important;
+}
+.addFriendInput-1Ta-rO .inputDefault-3FGxgL {
+    border                  :               none !important;
+}
+.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL {
+    background-color        :               transparent !important;
+}
+.addFriendInputWrapper-kkoSV9 .button-f2h6uQ, .addFriendInputWrapper-kkoSV9 .button-f2h6uQ:hover {
+    background-color        :               transparent !important;
+    transition              :               0.5s ease;
+}
+
+.addFriendInputWrapper-kkoSV9 .button-f2h6uQ:hover .contents-3ca1mk {
+    transition              :               1s ease;
+    color                   :             rgb(155, 155, 155) !important;
+
+}
+.addFriendInputWrapper-kkoSV9 .button-f2h6uQ{
+    border-left             :               1px solid #9b9b9b;
+    border-top-left-radius  :               0px;
+    border-bottom-left-radius:              0px;
+}
+.addFriendInputWrapper-kkoSV9 .button-f2h6uQ .contents-3ca1mk {
+    transition              :               1s ease;
+}
+.addFriendInputWrapper-kkoSV9.error-31k8Cx{
+    border-color            :             rgb(0, 132, 255);
+}
+.peopleColumn-1wMU14 .header-30YxSJ .error-30DGjS{
+    color:                                rgb(0, 132, 255);
+}
+.addFriendInputWrapper-kkoSV9 .button-f2h6uQ:hover{
+    transition              :               0.5s ease;
+    border-left-color       :             rgba(155, 155, 155, 0.479) !important;
+}
+
+
+
+/* unread seperator color styling */
+.isUnread-3Lojb- {
+    border-color            :               var(--divider-color);
+    --divider-color         :             rgb(63, 63, 63);
+}
+
+
+/* mention button color change */
+.colorLink-2apWfY.mentionButton-3C5YMI {
+    color                   :             #ebebeb;
+}
+.colorMuted-20987_.mentionButton-3C5YMI {
+    color                   :             #919191b4;
+}
+
+
+/* bd plugin/themes modification*/
+#app-mount .container-2nx-BQ, #app-mount .bd-switch-body {
+    width                   :               20px;
+    height                  :               20px;
+    background              :               transparent !important;
+}
+#app-mount .container-2nx-BQ .slider-32CRPX, #app-mount .bd-switch-body .bd-switch-slider {
+    left                    :               -6px !important;
+}
+#app-mount .container-2nx-BQ .slider-32CRPX > rect, #app-mount .bd-switch-body .bd-switch-slider rect {
+    height                  :               20px !important;
+    width                   :               20px !important;
+    x                       :               4px !important;
+    y                       :               0px !important;
+    rx                      :               5;
+    fill                    :             #424549;
+    
+}
+.bd-switch-checked .bd-switch-symbol path{
+    fill                    :             rgb(0, 255, 0) !important;
+}
+.bd-switch .bd-switch-symbol path{
+    fill                    :             #999;
+}
+.bd-addon-header{
+    background-color        :             #222222 !important;
+}
+.bd-description-wrap, .bd-footer{
+    background-color        :             #151515;
+}
+.bd-controls .bd-addon-button:not(.bd-button-danger){
+    background-color        :             #636b75 !important;
+}
+.bd-link{
+    color                   :             #d3d3d3;
+    transition              :               0.5s ease;
+}
+.bd-meta, .bd-link{
+    font-size               :               0px !important;
+    transition              :               0.5s ease;
+}
+.bd-link:hover{
+    text-decoration         :               none !important;
+    color                   :             #d3d3d394;
+    transition              :               0.5s ease;
+}
+.bd-addon-card:hover .bd-link, .bd-addon-card:hover .bd-meta{
+    transition              :               0.5s ease;
+    font-size               :               12px !important;
+}
+.bd-button-danger{
+    position                :               relative;
+    top                     :               0.4px !important;
+}
+
+
+/* simple modification for the close button in settings */
+#app-mount .tools-kIrEGr .container-O54IuJ{
+    position                :               relative;
+    bottom                  :               23px !important;
+    transition              :               0.5s ease;
+    right                   :               10px;
+}
+#app-mount .tools-kIrEGr .container-O54IuJ .keybind-13vtq8{
+    font-size               :               0px;
+}
+#app-mount .tools-kIrEGr .container-O54IuJ .keybind-13vtq8::after{
+    content                 :               'Close (ESC)';
+    font-size               :               11px;
+    white-space             :               nowrap;
+}
+#app-mount #voice-\&-video-tab + .toolsContainer-25FL6V .tools-kIrEGr .container-O54IuJ{
+    margin-left             :               -20px;
+}
+
+/* removing some stuff in friends list to make it look better */
+.scroller-hE2gWq{
+    border                  :               none;
+}
+.peopleList-2VBrVI{
+    overflow                :               visible scroll !important;
+}
+.peopleList-2VBrVI::-webkit-scrollbar{
+    display                 :               none;
+}
+
+
+/* modifying the send button */
+.button-y6hemj:focus-within .activeButtonChild-2hgLAO, .theme-dark .button-y6hemj:focus .activeButtonChild-2hgLAO, .theme-dark .button-y6hemj:hover .activeButtonChild-2hgLAO{
+    color                   :             #5f5f5f !important;
+}
+.activeButtonChild-2hgLAO{
+    color                   :             #d3d3d3;
+}
+.button-y6hemj, .activeButtonChild-2hgLAO{
+    bottom                  :               1.1px;
+}
+
+
+/* dm channels margin */
+.channel-1Shao0 .interactive-1vLZ_I {
+    margin-bottom           :               5px;
+}
+
+
+
+/* adding glow effect on some stuff and some other details */
+
+.cozyMessage-1DWF9U.message-2CShn3 .markup-eYLPri:hover{
+    box-shadow              :               0 0 0 2px hsla(0, 0%, 21%, 0.69), 0 3px 16px hsla(0, 0%, 38%, 0.69);
+    transition              :               0.5s ease;
+}
+.cozyMessage-1DWF9U.message-2CShn3  .container-2sjPya .messageAttachment-CZp8Iv a:hover, .imageWrapper-oMkQl4:hover{
+    box-shadow              :               0 0 0 2px hsla(0, 0%, 15%, 0.69), 0 3px 16px hsla(0, 0%, 25%, 0.69);
+    transition              :               0.5s ease;
+    border-radius           :               10px;
+}
+.menu-1QACrS {
+    animation               :               box-shadow infinite 4s, custom-menu-animation 250ms ease;
+    transform-origin        :               top;
+    border-radius           :               12px;
+}
+.menu-1QACrS{
+    border-radius           :               10px;
+}
+.menu-1QACrS .item-1OdjEX:not(.focused-3qFvc8) {
+    border-radius           :               25px;
+}
+.menu-1QACrS .item-1OdjEX:hover {
+    border-radius           :               10px;
+    background-color        :             rgb(58, 58, 58);
+}
+.focused-3qFvc8{
+    border-radius           :               10px;
+    background-color        :             rgb(58, 58, 58) !important;
+}
+.scroller-1bVxF5 .customItem-2CxBSo .button-1zW0-r{
+    transition              :               0.5s ease;
+}
+.contentWrapper-3vHNP2{
+    animation               :               box-shadow infinite 4s;
+    border-radius: 20px;
+}
+@keyframes box-shadow{
+    0%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 15%, 0.69);
+        transition          :               0.5s ease;
+    }
+    50%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 31%, 0.69);
+        transition          :               0.5s ease;
+    }
+    100%{
+        box-shadow          :               0 0 0 2px hsla(0, 0%, 17%, 0.69), 0 3px 16px hsla(0, 0%, 15%, 0.69);
+        transition          :               0.5s ease;
+    }
+}
+.message-2CShn3 .markup-eYLPri,.message-2CShn3  .container-2sjPya .messageAttachment-CZp8Iv, .imageWrapper-oMkQl4 {
+    transition              :               0.5s ease;
+}
+.markup-eYLPri code{
+    border-radius           :               20px;
+}
+.scrollerSpacer-3AqkT9{
+    height                  :               10px !important;
+}
+
+
+/* fixing emoji picker colors */
+.wrapper-22rqw6, .inspector-DFKXwB{
+    background-color        :               transparent !important;
+}
+#emoji-picker-tab{
+    background-color        :             #383838;
+}
+.emojiPicker-6YCk8a .header-11eigE .searchBar-2M9mRP {
+    border-radius           :               25px;
+    transition              :               0.5s ease;
+}
+.emojiPicker-6YCk8a .header-11eigE .searchBar-2M9mRP:hover {
+    background-color        :             #1a1a1a !important;
+    transition              :               0.5s ease;
+}
+.emojiPickerListWrapper-1T3YI3, .categorySection-3j71bm .wrapper-1NNaWG  {
+    background-color        :             #1a1a1a;
+}
+.diversitySelectorOptions-3DhNYs {
+    background-color        :             #292929;
+}
+.diversitySelectorOptions-3DhNYs {
+    background-color        :             #292929;
+}
+.diversityEmojiItem-2bgZKv{
+    transition              :               0.5s ease;
+    border-radius           :               20px;
+}
+.diversityEmojiItem-2bgZKv:hover{
+    transition              :               0.5s ease;
+    background-color        :             #535353;
+    border-radius           :               5px;
+}
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .itemInner-3e_4G4{
+    transition              :               0.5s ease;
+    background-color        :             #3b3b3b;
+    border-radius           :               10px;
+}
+.categoryItem-Kc_HK_.selectedCategoryItem-ZjqSui .layout-1qmrhw:hover{
+    transition              :               0.5s ease;
+    background-color        :             #2B2D30 !important;
+}
+
+
+/* discord nitro icon recolor in settings tab */
+[d="M1.84006 5.4367C2.19536 5.4367 2.49139 5.14651 2.49139 4.79823C2.49139 4.44996 2.19536 4.15977 1.84006 4.15977H1.48476C1.12947 4.15977 0.83329 4.44996 0.83329 4.79823C0.83329 5.14651 1.12947 5.4367 1.48476 5.4367H1.84006ZM15.282 13.1569C18.6574 11.6477 20.0785 7.81669 18.539 4.6241C17.4731 2.36029 15.2229 1.02527 12.8542 0.909088H6.16283C5.57062 0.909088 5.15606 1.37355 5.15606 1.89597C5.15606 2.47634 5.62989 2.88271 6.16283 2.88271H7.88006C8.23535 2.88271 8.53139 3.17289 8.53139 3.52117C8.53139 3.86945 8.23535 4.15977 7.88006 4.15977H3.67575C3.32046 4.15977 3.02428 4.44996 3.02428 4.79823C3.02428 5.14651 3.32046 5.4367 3.67575 5.4367H6.69578C7.05108 5.4367 7.34711 5.72702 7.34711 6.0753C7.34711 6.42358 7.05108 6.71376 6.69578 6.71376H4.80077C4.44547 6.71376 4.14943 7.00395 4.14943 7.35222C4.14943 7.7005 4.44547 7.99083 4.80077 7.99083H6.10357C6.16283 8.68738 6.34048 9.38394 6.63652 10.0224C8.11697 13.215 12.0252 14.6081 15.282 13.1569ZM9.22163 8.83321C8.36181 6.99779 9.18283 4.82663 11.0552 3.98379C12.9277 3.14096 15.1426 3.94576 16.0024 5.78119C16.8622 7.61661 16.0413 9.78777 14.1688 10.6306C12.2964 11.4734 10.0814 10.6686 9.22163 8.83321Z"]{
+    fill                    :             #919191;
+}
+[d="M14.0385 5.20456L15.2228 7.17818C15.2821 7.29423 15.2821 7.35232 15.2228 7.46837L14.0385 9.44199C13.9793 9.55803 13.8609 9.55803 13.8016 9.55803H11.4922C11.3738 9.55803 11.3146 9.49994 11.2554 9.44199L10.071 7.46837C10.0119 7.35232 10.0119 7.29423 10.071 7.17818L11.2554 5.20456C11.3146 5.08852 11.4331 5.08852 11.4922 5.08852H13.8016C13.9202 5.03042 13.9793 5.08852 14.0385 5.20456Z"]{
+    fill                    :             #cecece;
+}
+
+
+/* invite thingy restyle */
+.container-1Gt1iQ .contentWrapper-3oy4Xo .scroller-Q9d9Di {
+   background-color         :             #151515;
+}
+.container-1Gt1iQ .contentWrapper-3oy4Xo .scroller-Q9d9Di .flex-2S1XBF{
+    background-color        :             #222;
+    border-radius           :               25px;
+}
+
+
+/* phone number field fix thing */
+.phoneField-3NAPDv .countryButton-1cNDvB, .phoneField-3NAPDv .countryButton-1cNDvB .contents-3ca1mk .flex-2S1XBF {
+    background-color        :             #272727;
+}
+.phoneField-3NAPDv .countryButton-1cNDvB:hover, .phoneField-3NAPDv .countryButton-1cNDvB:hover .contents-3ca1mk .flex-2S1XBF {
+    background-color        :             #424242;
+}
+.phoneField-3NAPDv .countryButton-1cNDvB .contents-3ca1mk .flex-2S1XBF{
+    transition              :               0.2s ease;
+}
+.phoneField-3NAPDv .inputField-1iYysB{
+    height                  :               80%;
+    margin-left             :               2px;
+    margin-right            :               5px;
+    border-radius           :               5px;
+}
+
+
+/* SendTimeStamps(plugin) background color fix */
+.timestamp-6-ptG3{
+    background-color        :               transparent;
+}
+
+
+/* fixes a bug in popout menu */
+[placeholder="Click to add a note"]{
+    width                   :               97%;
+    margin-left             :               3.5px;
+}
+
+
+/* mention / channel tags restyle */
+.wrapper-1ZcZW-{
+    background-color        :             #222222 !important;
+    border                  :               1px solid #5a5a5a;
+    border-radius           :               5px;
+    transition              :               0.5s ease;
+}
+.wrapper-1ZcZW-:hover{
+    transition              :               0.5s ease;
+    border-radius           :               10px;
+    text-decoration         :               none !important;
+}
+.wrapper-1ZcZW- .channelIcon-3I2O7O{
+    position                :               relative;
+    margin-left             :               -15px !important;
+    top                     :               4px;
+    transform               :               scale(.9);
+    left                    :               -2px;
+}
+
+
+/* quickswitcher restyle */
+.container-qBnZJg {
+    background-color        :               transparent !important;
+}
+.quickswitcher-pKcM9U .result-u66Ywh{
+    transition              :               0.3s ease;
+}
+.quickswitcher-pKcM9U .result-u66Ywh:hover, .result-u66Ywh[aria-selected=true]{
+    background-color: #252525;
+    border-radius           :               15px;
+}
+
+
+
+
+
+
+/* add a server/discovery restyle */
+.focusLock-2tveLW .flex-2S1XBF, [class="flex-2S1XBF flex-3BkGQD horizontalReverse-60Katr horizontalReverse-2QssvL flex-3BkGQD directionRowReverse-HZatnx justifyStart-2Mwniq alignStretch-Uwowzr noWrap-hBpHBz footer-31IekZ footer-3ie9JP footerSeparator-VzAYwb"] {
+    background-color        :             #0F0F0F !important;
+}
+.templatesList-uohY49 .container-x8Y1ix, [class="footerButton-24QPis button-f2h6uQ lookFilled-yCfaCM colorPrimary-2AuQVo sizeMedium-2bFIHr grow-2sR_-F"]{
+    background-color        :             #131313 !important;
+    transition              :               0.3s ease;
+}
+.templatesList-uohY49 .container-x8Y1ix:hover{
+    background-color        :             #181818 !important;
+    transition              :               0.3s ease;
+    border-radius           :               35px;
+}
+.templatesList-uohY49 .container-x8Y1ix:first-child{
+    margin-top              :               15px;
+}
+.templatesList-uohY49{
+    background-color        :             #111;
+}
+[class="footerButton-24QPis button-f2h6uQ lookFilled-yCfaCM colorPrimary-2AuQVo sizeMedium-2bFIHr grow-2sR_-F"]:hover{
+    background-color        :             #181818 !important;
+}
+.circleIconButton-1VxDrg.selected-2r1Hvo{
+    background-color        :               transparent !important;
+}
+.footerSeparator-VzAYwb {
+    box-shadow              :               none !important;
+}
+.categoryItem-Kc_HK_ {
+    margin-bottom           :               10px;
+}
+.pageWrapper-2PwDoS{
+    background-color        :             #121212 !important;
+}
+.scroller-3j5xK2::-webkit-scrollbar{
+    display                 :               none !important;
+}
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL), .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL), .input-3r5zZY {
+    background-color        :             rgb(43, 43, 43) !important;
+}
+.search-25t1e9 .searchBox-31Zv9h .searchIcon-3X4BYL{
+    display                 :               none;
+}
+.search-25t1e9 .searchBox-31Zv9h{
+    background-color        :             rgba(0, 0, 0, 0) !important;
+    padding-right           :               0px;
+}
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover, .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):hover, .input-3r5zZY:hover{
+    border-color            :             rgb(58, 58, 58);
+}
+.search-25t1e9 .searchBox-31Zv9h:focus, .search-25t1e9 .searchBox-31Zv9h:focus-within {
+    -webkit-box-shadow      :               none !important;
+    box-shadow              :               none !important;
+    border-color            :               transparent !important;
+}
+.input-2g-os5:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within, .scrollableContainer-15eg7h:not(.addFriendInputWrapper-kkoSV9 .inputWrapper-1YNMmM .inputDefault-3FGxgL):focus-within, .input-3r5zZY:focus-within{
+    border-color            :             rgb(117, 117, 117);
+    transition              :               0.5s ease;
+}
+.viewWrapper-2sTW6t .searchHeader-3ZIh2x .headerContentWrapper-1u9R_E {
+    background              :             #151515 !important;
+    border-radius           :               35px;
+}
+.viewWrapper-2sTW6t .searchHeader-3ZIh2x .headerImage-2D5D-v {
+    visibility              :               hidden;
+}
+.card-2TuZPZ{
+    background-color        :             #191919!important;
+}
+.card-2TuZPZ:hover{
+    background-color        :             #131313 !important;
+}
+.card-2TuZPZ:hover .splash-1VADA3{
+    opacity                 :               0.5;
+}
+
+
+
+
+/* profile banner full background */
+.bannerPremium-kkSkPv:not(.accountProfileCard-lbN7n- .banner-1YaD3N, .userPopout-2j1gM4 .banner-1YaD3N, #account .item-1OdjEX .popoutBanner-3cqRD9),.banner-1YaD3N:not(.accountProfileCard-lbN7n- .banner-1YaD3N, .userPopout-2j1gM4 .banner-1YaD3N, #account .item-1OdjEX .popoutBanner-3cqRD9) {
+  position                  :               absolute;
+  height                    :               100%;
+  width                     :               100%;
+  opacity                   :               .13;
+  border-radius             :               5px;
+  bottom                    :               0px;
+}
+.note-3M15gE > textarea,.note-Go5ZP2 > textarea,.bodyInnerWrapper-2bQs1k,.footer-3naVBw,.inputWrapper-1YNMmM > input,
+.role-2TIOKu {
+  background-color          :               transparent!important;
+}
+.avatar-3QF_VA,.wrapper-1VLyxH:not(#account .wrapper-1VLyxH) {
+  border-color              :               transparent !important;
+  background-color          :               transparent !important;
+}
+.nameTag-2Nlmsy{
+    left                    :               135px;
+}
+.root-8LYsGj .badgeList-2aoHPw {
+    position                :               relative;
+    margin-top              :               10px;
+    margin-left             :               -13px
+}
+.root-8LYsGj .tabBarContainer-sCZC4w{
+    margin-top              :               40px;
+}
+.premiumIconWrapper-32h0Ri {
+    display                 :               none;
+}
+.root-8LYsGj .relationshipButtons-3ByBpj{
+    margin-top              :               7px;
+    z-index                 :               9999;
+}
+.userInfoSection-2u2hir{
+    margin-top              :               10px;
+}
+.applicationInstallButton-1-58qm {
+    display                 :               none;
+}
+.customStatusActivity-WKWGD-{
+    position                :               relative;
+    top                     :               35px;
+    margin-left             :               10px;
+}
+.fullscreenOnMobile-ixj0e3 .customStatusActivity-WKWGD-{
+    margin-bottom           :               50px;
+}
+.noTabBar-2Q-iE_ {
+    border-top              :               none;
+}
+.userInfoSectionHeader-2mYYun {
+    margin-top              :               5px;
+}
+
+
+
+
+/* memberlist */
+.members-3WRCEx {
+    height                  :               auto;
+    max-height              :               100vh;
+}
+.layout-1qmrhw {
+    justify-content         :               unset;
+}
+.chatContent-3KubbW:not(:last-child) {
+    margin-right            :               65px;
+}
+:not(.ChannelDms-channelmembers-wrap) .membersWrap-3NUR2t {
+    position                :               absolute;
+    right                   :               0;
+    width                   :               unset;
+    min-width               :               65px;
+    height                  :               100%;
+}
+:not(.ChannelDms-channelmembers-wrap) .members-3WRCEx {
+    width                   :               65px;
+    transition              :               width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+.ChannelDms-channelmembers-wrap {
+    width                   :               65px;
+    position                :               absolute;
+    right                   :               0;
+    height                  :               100%;
+    transition              :               width 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+:not(.ChannelDms-channelmembers-wrap) .membersWrap-3NUR2t:hover .members-3WRCEx,
+.ChannelDms-channelmembers-wrap:hover {
+    width                   :               240px;
+    -webkit-box-shadow      :               var(--elevation-high);
+    box-shadow              :               var(--elevation-high);
+    transition              :               width 0.5s 0.5s ease, box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+.ChannelDms-channelmembers-wrap :is(.membersWrap-3NUR2t, .members-3WRCEx, .privateChannels-oVe7HL),
+html #MemberCount {
+    width                   :               100%;
+}
+.ChannelDms-channelmembers-wrap .item-3XjbnG {
+    margin                  :               0;
+    transition              :               margin 0.5s ease;
+}
+.ChannelDms-channelmembers-wrap:hover .item-3XjbnG {
+    margin                  :               0 8px;
+    transition-delay        :               0.5s;
+}
+.ChannelDms-channelmembers-wrap .privateChannels-oVe7HL .closeButton-mupH76 {
+    width                   :               0;
+    margin                  :               0;
+    padding-right           :               0;
+}
+.ChannelDms-channelmembers-wrap:hover .privateChannels-oVe7HL .closeButton-mupH76 {
+    animation               :               floatChannelDmsPrivateChannelsCloseButton 1s 1s forwards;
+}
+@keyframes floatChannelDmsPrivateChannelsCloseButton {
+to {
+    width                   :               16px;
+    margin                  :               2px;
+    padding-right           :               8px;
+}
+}
+
+
+.username-h_Y3Us:before {
+    content                 :               "";
+    position                :               absolute;
+    width                   :               100%;
+    transform               :               scaleX(0);
+    height                  :               1px;
+    bottom                  :               0;
+    left                    :               0;
+    background-color        :             rgb(155, 155, 155);
+    transform-origin        :               bottom right;
+    transition              :               transform .25s ease-out;
+}
+.username-h_Y3Us:hover{
+    text-decoration         :               none !important;
+}
+.username-h_Y3Us:hover:before {
+    transform               :               scaleX(1);
+    transform-origin        :               bottom left;
+}
+
+
+
+/* bro i fr dont know what i be coding */
+
+.wrapper-1HIH0j {
+    border-radius           :               8px;
+    padding                 :               16px;
+    overflow                :               hidden;
+    min-height              :               172px;
+    max-width               :               initial;
+    transform               :               translateY(0);
+    -webkit-transform       :               translateY(0);
+    background              :             #171717 !important;
+}
+.wrapper-1HIH0j .inviteSplash-2nkLRX {
+    filter                  :               brightness(0.7) opacity(.7) blur(.7px);
+    position                :               absolute;
+    width                   :               100%;
+    height                  :               100%;
+    z-index                 :               -1;
+}
+h5.colorStandard-21JIj7.size14-3fJ-ot.h5-2RwDNl.title-3hptVQ.header-3anOjb {
+    margin-top              :               6px;
+}
+button.button-2b4VEQ.height20-WSMpPs.button-f2h6uQ.lookFilled-yCfaCM.colorGreen-3y-Z79.buttonSize-3QlBTl.grow-2sR_-F {
+    position                :               fixed;
+    bottom                  :               10%;
+    width                   :               90%;
+    font-size               :               large;
+}
+.container-2sjPya .content-1r-J1r .colorGreen-3y-Z79{
+    background-color        :             rgba(68, 68, 68, 0.74) !important;
+    transition              :               0.5s ease;
+    border-radius           :               10px;
+}
+.container-2sjPya .content-1r-J1r .colorGreen-3y-Z79:hover{
+    background-color        :             rgb(68, 68, 68) !important;
+}
+
+
+
+/* toolbar restyle */
+
+.wrapper-2vIMkT .button-3bklZh svg path[d="M12.2512 2.00309C12.1677 2.00104 12.084 2 12 2C6.477 2 2 6.477 2 12C2 17.522 6.477 22 12 22C17.523 22 22 17.522 22 12C22 11.916 21.999 11.8323 21.9969 11.7488C21.3586 11.9128 20.6895 12 20 12C15.5817 12 12 8.41828 12 4C12 3.31052 12.0872 2.6414 12.2512 2.00309ZM10 8C10 6.896 9.104 6 8 6C6.896 6 6 6.896 6 8C6 9.105 6.896 10 8 10C9.104 10 10 9.105 10 8ZM12 19C15.14 19 18 16.617 18 14V13H6V14C6 16.617 8.86 19 12 19Z"] {
+  d                         :               path("M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M12.2512 2.00309C12.1677 2.00104 12.084 2 12 2C6.477 2 2 6.477 2 12C2 17.522 6.477 22 12 22C17.523 22 22 17.522 22 12C22 11.916 21.999 11.8323 21.9969 11.7488C21.3586 11.9128 20.6895 12 20 12C15.5817 12 12 8.41828 12 4C12 3.31052 12.0872 2.6414 12.2512 2.00309ZM10 8C10 6.896 9.104 6 8 6C6.896 6 6 6.896 6 8C6 9.105 6.896 10 8 10C9.104 10 10 9.105 10 8ZM12 19C15.14 19 18 16.617 18 14V13H6V14C6 16.617 8.86 19 12 19Z"] ~ path {
+  display                   :               none;
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M4.79805 3C3.80445 3 2.99805 3.8055 2.99805 4.8V15.6C2.99805 16.5936 3.80445 17.4 4.79805 17.4H7.49805V21L11.098 17.4H19.198C20.1925 17.4 20.998 16.5936 20.998 15.6V4.8C20.998 3.8055 20.1925 3 19.198 3H4.79805Z"] {
+  d                         :               path("M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M10 8.26667V4L3 11.4667L10 18.9333V14.56C15 14.56 18.5 16.2667 21 20C20 14.6667 17 9.33333 10 8.26667Z"] {
+  d                         :               path("M8,9.8V10.7L9.7,11C12.3,11.4 14.2,12.4 15.6,13.7C13.9,13.2 12.1,12.9 10,12.9H8V14.2L5.8,12L8,9.8M10,5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M12 5C5.648 5 1 12 1 12C1 12 5.648 19 12 19C18.352 19 23 12 23 12C23 12 18.352 5 12 5ZM12 16C9.791 16 8 14.21 8 12C8 9.79 9.791 8 12 8C14.209 8 16 9.79 16 12C16 14.21 14.209 16 12 16Z"] {
+  d                         :               path("M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M12 5C5.648 5 1 12 1 12C1 12 5.648 19 12 19C18.352 19 23 12 23 12C23 12 18.352 5 12 5ZM12 16C9.791 16 8 14.21 8 12C8 9.79 9.791 8 12 8C14.209 8 16 9.79 16 12C16 14.21 14.209 16 12 16Z"] ~ path {
+  display                   :               none;
+}
+.wrapper-2vIMkT .button-3bklZh svg rect[transform="rotate(-45 2 21.2154)"] {
+  display                   :               none;
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M10.1843 18.8115C10.7713 18.9328 11.3775 19 12 19C18.352 19 23 12 23 12C23 12 21.9643 10.4402 20.2026 8.79322L15.8265 13.1693C15.4393 14.4384 14.4382 15.4393 13.1694 15.8264L10.1843 18.8115ZM12.4818 8.02871C12.3238 8.00975 12.1631 8 12 8C9.791 8 8 9.79 8 12C8 12.1631 8.00975 12.3239 8.0287 12.4818L4.59645 15.914C2.35293 14.0375 1 12 1 12C1 12 5.648 5 12 5C13.0508 5 14.055 5.19157 14.9992 5.51132L12.4818 8.02871Z"] {
+  d                         :               path("M12 6c3.79 0 7.17 2.13 8.82 5.5-.59 1.22-1.42 2.27-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l1.65 1.65C10.66 6.09 11.32 6 12 6zm-1.07 1.14L13 9.21c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07C16.5 9.01 14.48 7 12 7c-.37 0-.72.05-1.07.14zM2.01 3.87l2.68 2.68C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.45 2.01 3.87zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02-1.38 0-2.5-1.12-2.5-2.5 0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75c-.23.55-.36 1.15-.36 1.78 0 2.48 2.02 4.5 4.5 4.5.63 0 1.23-.13 1.77-.36l.98.98c-.88.24-1.8.38-2.75.38-3.79 0-7.17-2.13-8.82-5.5.7-1.43 1.72-2.61 2.93-3.53z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M19.2929 9.8299L19.9409 9.18278C21.353 7.77064 21.353 5.47197 19.9409 4.05892C18.5287 2.64678 16.2292 2.64678 14.817 4.05892L14.1699 4.70694L19.2929 9.8299ZM12.8962 5.97688L5.18469 13.6906L10.3085 18.813L18.0201 11.0992L12.8962 5.97688ZM4.11851 20.9704L8.75906 19.8112L4.18692 15.239L3.02678 19.8796C2.95028 20.1856 3.04028 20.5105 3.26349 20.7337C3.48669 20.9569 3.8116 21.046 4.11851 20.9704Z"] {
+  d                         :               path("M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z"] {
+  d                         :               path("M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z");
+}
+
+.wrapper-2vIMkT .button-3bklZh svg path[d="M14 3H20C21 3 22.0001 4 22.0001 5V19.0003C22.0001 20 21 21 20 21H14C13 21 6 13 6 13H2V11H6C6 11 13 3 14 3Z"] {
+  d                         :               path("M22,6.98V16c0,1.1-0.9,2-2,2H6l-4,4V4c0-1.1,0.9-2,2-2h10.1C14.04,2.32,14,2.66,14,3s0.04,0.68,0.1,1H4v12h16V7.9 C20.74,7.75,21.42,7.42,22,6.98z M16,3c0,1.66,1.34,3,3,3s3-1.34,3-3s-1.34-3-3-3S16,1.34,16,3z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24zm2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"] {
+  d                         :               path("M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z");
+}
+.wrapper-2vIMkT .button-3bklZh svg path[d="M5 2C3.34315 2 2 3.34315 2 5V19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5ZM8.79741 7.72V16H6.74541V7.72H8.79741ZM13.2097 7.72C16.0897 7.72 17.5897 9.388 17.5897 11.848C17.5897 14.308 16.0537 16 13.2577 16H10.3537V7.72H13.2097ZM13.1497 14.404C14.6137 14.404 15.5257 13.636 15.5257 11.86C15.5257 10.12 14.5537 9.316 13.1497 9.316H12.4057V14.404H13.1497Z"] {
+  d                         :               path("M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z");
+}
+.menu-1QACrS #message-actions-reply.item-1OdjEX path {
+  d                         :               path("M8,9.8V10.7L9.7,11C12.3,11.4 14.2,12.4 15.6,13.7C13.9,13.2 12.1,12.9 10,12.9H8V14.2L5.8,12L8,9.8M10,5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9");
+}
+.menu-1QACrS #message-actions-edit.item-1OdjEX path {
+  d                         :               path("M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19zM20.71 5.63l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41z");
+}
+.menu-1QACrS #message-actions-pin.item-1OdjEX path {
+  d                         :               path("M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12M8.8,14L10,12.8V4H14V12.8L15.2,14H8.8Z");
+}
+.menu-1QACrS #message-actions-thread.item-1OdjEX path {
+  d                         :               path("M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z");
+}
+.menu-1QACrS #message-actions-mark-unread.item-1OdjEX path {
+  d                         :               path("M2,5.27L3.28,4L20,20.72L18.73,22L15.65,18.92C14.5,19.3 13.28,19.5 12,19.5C7,19.5 2.73,16.39 1,12C1.69,10.24 2.79,8.69 4.19,7.46L2,5.27M12,9A3,3 0 0,1 15,12C15,12.35 14.94,12.69 14.83,13L11,9.17C11.31,9.06 11.65,9 12,9M12,4.5C17,4.5 21.27,7.61 23,12C22.18,14.08 20.79,15.88 19,17.19L17.58,15.76C18.94,14.82 20.06,13.54 20.82,12C19.17,8.64 15.76,6.5 12,6.5C10.91,6.5 9.84,6.68 8.84,7L7.3,5.47C8.74,4.85 10.33,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C12.69,17.5 13.37,17.43 14,17.29L11.72,15C10.29,14.85 9.15,13.71 9,12.28L5.6,8.87C4.61,9.72 3.78,10.78 3.18,12Z");
+}
+.menu-1QACrS #message-actions-reactions.item-1OdjEX path {
+  d                         :               path("M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z");
+}
+.menu-1QACrS #message-actions-copy-link.item-1OdjEX path {
+  d                         :               path("M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z");
+}
+.menu-1QACrS #message-actions-tts.item-1OdjEX path {
+  d                         :               path("M9 13c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H3zM15.08 7.05c.84 1.18.84 2.71 0 3.89l1.68 1.69c2.02-2.02 2.02-5.07 0-7.27l-1.68 1.69zM20.07 2l-1.63 1.63c2.77 3.02 2.77 7.56 0 10.74L20.07 16c3.9-3.89 3.91-9.95 0-14z");
+}
+
+.menu-1QACrS #message-actions-report.item-1OdjEX path {
+  d                         :               path("M12.36,6L12.76,8H18V14H14.64L14.24,12H7V6H12.36M14,4H5V21H7V14H12.6L13,16H20V6H14.4");
+}
+.menu-1QACrS #message-actions-copy-id.item-1OdjEX path {
+  d                         :               path("M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z");
+}
+.message-2CShn3 .buttons-3dF5Kd {
+  max-width                 :               32px;
+  opacity                   :               0;
+  visibility                :               visible;
+  pointer-events            :               none;
+  transition                :               opacity 250ms cubic-bezier(0.4,0,0.2,1), max-width 250ms cubic-bezier(0.4,0,0.2,1) 250ms;
+}
+.selected-2LX7Jy.message-2CShn3 .buttons-3dF5Kd, .message-2CShn3:hover .buttons-3dF5Kd {
+  max-width                 :               380px;
+  opacity                   :               1;
+  pointer-events            :               all;
+}
+.wrapper-2vIMkT {
+  background-color          :             #18191C;
+  border-radius             :               10px;
+  box-shadow                :               0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+  border                    :               none;
+  overflow                  :               hidden;
+  z-index                   :               2;
+}
+.wrapper-2vIMkT:hover {
+  box-shadow                :               0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+}
+.wrapper-2vIMkT .button-3bklZh {
+  transition                :               0.3s ease all;
+}
+.wrapper-2vIMkT .button-3bklZh:active {
+  padding                   :               4px;
+}
+.message-G6O-Wv {
+  padding                   :               0;
+  box-shadow                :               none !important;
+}
+.message-G6O-Wv .wrapper-30-Nkg {
+  margin                    :               0 0 0 52px !important;
+}
+.message-G6O-Wv .wrapper-30-Nkg .avatar-2e8lTP {
+  left                      :               -52px !important;
+}
+
+/* winbutton padding */
+.winButton-3UMjdg {
+  padding-left              :               3px;
+  padding-right             :               3px;
+}
+
+
+/* folder restyle(yes again) */
+.expandedFolderBackground-1kSAf6{
+    background-color        :             #191919;
+}
+[id^="folder-items-"] *{
+    transform               :               scale(.97);
+    border-radius           :               25px !important;
+}
+.folder-241Joy{
+    background              :               none !important;
+}
+.closedFolderIconWrapper-3tRb2d, .folderIconWrapper-1oRIZr{
+    border-radius           :               25px;
+}
+
+
+/* party mode restyle :) */
+.container-3aTfKk{
+    background              :               transparent !important;
+    max-width               :               100%;
+    margin-right            :               10px;
+    align-self              :               center !important;
+    transition              :               0.5s ease;
+}
+.container-3aTfKk .progress-1J56zN {
+    background              :             #555555 !important;
+}
+.container-3aTfKk .progressBar-1T6LYX  {
+    animation               :               rainbow 10s linear 0s infinite normal 
+}
+@keyframes rainbow {
+    0%    {background       :             #ff0000}
+    12%   {background       :             #ffbf00}
+    25%   {background       :             #80ff00}
+    37%   {background       :             #00ff40}
+    50%   {background       :             #00ffff}
+    62%   {background       :             #0040ff}
+    75%   {background       :             #8000ff}
+    87%   {background       :             #eb34bd}
+    100%  {background       :             #ff0000}
+}
+.combo-2aK5O7 .comboNameplate-2LHfRI{
+    background-color        :             #353535 !important;
+}
+.combo-2aK5O7 .text-sm-normal-3Zj3Iv{
+    color                   :             #999999 !important;
+}
+.combo-2aK5O7{
+    background-color        :             #353535 !important;
+    border                  :               1px solid #919191;
+    
+}
+.comboValue-1MDc9T{
+    -webkit-text-stroke     :             #999999;
+    margin-bottom           :               10px;
+    margin-top              :               5px;
+}
+.combo-2aK5O7 .text-sm-normal-3Zj3Iv, .messageComboScore-1cWPCc:nth-child(2){
+    margin-bottom           :               10px;
+}
+.content-2hZxGK  .message-G6O-Wv{
+    background              :               transparent !important;
+    border                  :               1px solid #91919159;
+    border-radius           :               10px;
+    padding-top             :               0px;
+    padding-bottom          :               10px;
+}
+.disableInteraction-25fleg .contents-2MsGLg{
+    right                   :               30px;
+    position                :               relative;
+    max-width               :               100%;
+    max-height              :               30%;
+    width                   :               auto;
+    height                  :               auto;
+}
+
+
+
+
+
+/* sum to do with popups, idk tho */
+.focusLock-2tveLW .flex-2S1XBF, [class="flex-2S1XBF flex-3BkGQD horizontalReverse-60Katr horizontalReverse-2QssvL flex-3BkGQD directionRowReverse-HZatnx justifyStart-2Mwniq alignStretch-Uwowzr noWrap-hBpHBz footer-31IekZ footer-3ie9JP footerSeparator-VzAYwb"]{
+    background-color        :               transparent !important;
+}
+.listRow-2nO1T6{
+    transition              :               0.5s ease;
+}
+.listRow-2nO1T6:hover{
+    background-color        :             #393939;
+    border-radius           :               16px;
+}
+
+
+
+
+/* bro what the fuck do i be coding... tf is this */
+.option-2eIyOn.focused-ODgjnC, .option-2eIyOn:focus{
+    background-color        :               transparent;
+}
+.option-2eIyOn.focused-ODgjnC:hover, .option-2eIyOn:focus:hover{
+    background-color        :             #36393E;
+}
+
+
+
+/* makes emojis not text selectable */
+.emojiContainer-2XKwXX{
+    user-select             :               none;
+}
+
+
+
+/* bf error modal restyle */
+.bd-error-modal .defaultColor-2cKwKo, .bd-tab-bar{
+    margin                  :               10px 10px 10px 10px;
+}
+.bd-error-modal .bd-addon-error{
+    width                   :               95%;
+    margin-left             :               2.5%;
+}
+
+
+
+
+/* makes pings more bold(BARELY noticable bro) */
+.lowerBadge-3WTshO .numberBadge-37OJ3S {
+    font-weight:                            500 !important;
+}
+
+
+/* create a server stuff restyle( YES AGAIN BRO IM A MESSY PERSON ) */
+.uploadIcon-2wV7s_ .iconContainer-GFfNaA circle {
+    fill                    :             #444 !important;
+}
+[class="button-f2h6uQ lookBlank-21BCro colorBrand-I6CyqQ sizeMin-DfpWCE grow-2sR_-F"], .backButton-2Ps-B8 {
+    color                   :             #999 !important;
+}
+.container-1Lk8p7 .optionsList-dmHy1l .container-x8Y1ix{
+    transition              :               0.3s ease;
+    background-color        :             #111111;
+}
+.container-1Lk8p7 .optionsList-dmHy1l .container-x8Y1ix:hover{
+    background-color        :             #181818;
+    border-radius           :               35px;
+}
+[d="M54.8694 2.85498C53.8065 2.4291 52.721 2.04752 51.6153 1.71253L51.3254 2.66957L51.0354 3.62661C51.9783 3.91227 52.9057 4.23362 53.8161 4.58911C54.1311 3.98753 54.4832 3.40847 54.8694 2.85498ZM75.4109 26.1839C76.0125 25.8689 76.5915 25.5168 77.145 25.1306C77.5709 26.1935 77.9525 27.279 78.2875 28.3847L77.3304 28.6746L76.3734 28.9646C76.0877 28.0217 75.7664 27.0943 75.4109 26.1839ZM78.8148 43.8253L79.8102 43.9222C79.9357 42.6318 80 41.3234 80 40C80 38.6766 79.9357 37.3682 79.8102 36.0778L78.8148 36.1747L77.8195 36.2715C77.9389 37.4977 78 38.7414 78 40C78 41.2586 77.9389 42.5023 77.8195 43.7285L78.8148 43.8253ZM43.8253 1.18515L43.9222 0.189853C42.6318 0.0642679 41.3234 0 40 0C38.6766 0 37.3682 0.064268 36.0778 0.189853L36.1747 1.18515L36.2715 2.18045C37.4977 2.06112 38.7414 2 40 2C41.2586 2 42.5023 2.06112 43.7285 2.18045L43.8253 1.18515ZM28.6746 2.66957L28.3847 1.71253C25.8549 2.47897 23.4312 3.48925 21.1408 4.71604L21.6129 5.59756L22.0851 6.47907C24.2606 5.3138 26.5624 4.35439 28.9646 3.62661L28.6746 2.66957ZM15.2587 9.85105L14.6239 9.0784C12.5996 10.7416 10.7416 12.5996 9.0784 14.6239L9.85105 15.2587L10.6237 15.8935C12.2042 13.9699 13.9699 12.2042 15.8935 10.6237L15.2587 9.85105ZM5.59756 21.6129L4.71604 21.1408C3.48925 23.4312 2.47897 25.8549 1.71253 28.3847L2.66957 28.6746L3.62661 28.9646C4.35439 26.5624 5.3138 24.2607 6.47907 22.0851L5.59756 21.6129ZM0 40C0 38.6766 0.0642679 37.3682 0.189853 36.0778L1.18515 36.1747L2.18045 36.2715C2.06112 37.4977 2 38.7414 2 40C2 41.2586 2.06112 42.5023 2.18045 43.7285L1.18515 43.8253L0.189853 43.9222C0.064268 42.6318 0 41.3234 0 40ZM2.66957 51.3254L1.71253 51.6153C2.47897 54.1451 3.48926 56.5688 4.71604 58.8592L5.59756 58.3871L6.47907 57.9149C5.3138 55.7394 4.35439 53.4376 3.62661 51.0354L2.66957 51.3254ZM9.85105 64.7413L9.0784 65.3761C10.7416 67.4004 12.5996 69.2584 14.6239 70.9216L15.2587 70.1489L15.8935 69.3763C13.9699 67.7958 12.2042 66.0301 10.6237 64.1065L9.85105 64.7413ZM21.6129 74.4024L21.1408 75.284C23.4312 76.5107 25.8549 77.521 28.3847 78.2875L28.6746 77.3304L28.9646 76.3734C26.5624 75.6456 24.2607 74.6862 22.0851 73.5209L21.6129 74.4024ZM36.1747 78.8148L36.0778 79.8102C37.3682 79.9357 38.6766 80 40 80C41.3234 80 42.6318 79.9357 43.9222 79.8102L43.8253 78.8148L43.7285 77.8195C42.5023 77.9389 41.2586 78 40 78C38.7414 78 37.4977 77.9389 36.2715 77.8195L36.1747 78.8148ZM51.3254 77.3304L51.6153 78.2875C54.1451 77.521 56.5688 76.5107 58.8592 75.284L58.3871 74.4024L57.9149 73.5209C55.7394 74.6862 53.4376 75.6456 51.0354 76.3734L51.3254 77.3304ZM64.7413 70.1489L65.3761 70.9216C67.4004 69.2584 69.2584 67.4004 70.9216 65.3761L70.1489 64.7413L69.3763 64.1065C67.7958 66.0301 66.0301 67.7958 64.1065 69.3763L64.7413 70.1489ZM74.4024 58.3871L75.284 58.8592C76.5107 56.5688 77.521 54.1451 78.2875 51.6153L77.3304 51.3254L76.3734 51.0354C75.6456 53.4375 74.6862 55.7393 73.5209 57.9149L74.4024 58.3871Z"]{
+    color                   :             #777;
+}
+.itemFilled-1cPbtg{
+    background-color        :             #111 !important;
+    transition              :               0.3s ease;
+    border                  :               1px solid #333;
+    border-radius           :               10px;
+}
+.itemFilled-1cPbtg:hover{
+    background-color        :             #333 !important;
+    border-radius           :               35px;
+}
+
+/* vc users restyle on hover */
+.voiceUser-3nRK-K:hover{
+    background-color        :             #333;
+    border-radius           :               25px;
+}
+.voiceUser-3nRK-K {
+    transition              :               0.5s ease;
+}
+.listDefault-2F-w65 .clickable-1ctZ-H:hover .content-1Tgc42{
+    background-color        :               transparent !important;
+}
+
+/* jump buttons adjustment(inbox) */
+
+.layer-2aCOJ3 .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI  .hasReply-2Cr4KE+div {
+    margin-top              :               25px !important;
+}
+.layer-2aCOJ3 .messagesPopoutWrap-3zryHW .messagesPopout-eVzQcI .actionButtons-2mNSAB .jumpButton-1ZwI_j{
+    border                  :               1px solid #999;
+    border-radius           :               25px;
+}
+.UserDetails-dates-wrapper .UserDetails-dates-container {
+    margin-top              :               50px;
+    z-index                 :               1000;
+}
+
+
+/* message attachments */
+.messageAttachment-CZp8Iv .wrapper-1FP9YQ, .messageAttachment-CZp8Iv .attachment-1PZZB2 {
+    background-color        :             rgba(0, 0, 0, 0.062) !important;
+    border-radius           :               10px;
+}
+
+
+
+/* centered user popout avatar*/
+.avatarWrapperNormal-ahVUaC, .preview-Z55SA3 .avatarUploaderNormal-2m2hFm, .avatarWrapperNonUserBot-2LumL4  {
+    position                :               absolute;
+    transform               :               translate(-50%);
+    left                    :               50%;
+}
+
+.headerTop-3GPUSF {
+    text-align              :               center;
+    position                :               relative;
+    max-width               :               100%;
+    right                   :               0px;
+    top                     :               0px;
+}
+
+.profileBadges-2pItdR {
+    justify-content         :               center;
+    position                :               relative;
+    max-width               :               100%;
+    right                   :               0px;
+    top                     :               0px;
+}
+
+.customStatus-3XAoF9 {
+    display                 :               flex;
+    justify-content         :               center;
+    text-align              :               center;
+}
+
+.userPopout-2j1gM4 .UserDetails-dates-container, #account .UserDetails-dates-container, .preview-Z55SA3 .UserDetails-dates-container, .preview-Z55SA3 .popoutInfo-16MuYF .eyebrow-Ejf06y, .customizationSection-IGy2fS .userInfoBody-1zgAd0 {
+    display:                                flex;
+    justify-content:                        center;
+    text-align              :               center;
+}
+#account .profileBadges-2pItdR {
+    margin-right            :               20px;
+}
+#account .headerTop-3GPUSF {
+    margin-left             :               20px;
+}
+
+#app-mount .profileGroup-1yKk23 .item-1OdjEX {
+    background-color:                       transparent !important;
+    border-radius           :               0px;
+}
+#account{
+    margin-left             :               40px;
+    margin-bottom           :               -17px;
+    border-bottom-left-radius:              0;
+}
+
+
+/* fix invites from browser */
+.focusLock-2tveLW .container-1Gt1iQ .inviteSplash-2Q0PLE{
+    display                 :               none;
+}
+.focusLock-2tveLW .container-1Gt1iQ .flex-2S1XBF .pill-qMtBTq .pillMessage-3pHz6R{
+    margin-top              :               85px;
+    position                :               relative;
+    left                    :               -5px !important;
+}
+.focusLock-2tveLW .container-1Gt1iQ .flex-2S1XBF .pillOnline-345ee0 .pillMessage-3pHz6R{
+    padding-right           :               120px;
+    margin-top              :               130px !important;
+    margin-left             :               calc(127.5px + 8px) !important;
+}
+
+
+/* toolbar selected/hover icon glow */
+.title-31SJ6t .iconWrapper-2awDjA:hover{
+    transition              :               0.2s ease;
+    filter                  :               drop-shadow(0 0 5px #999) !important;
+}
+.title-31SJ6t .iconWrapper-2awDjA{
+    transition              :               0.2s ease;
+}
+.title-31SJ6t .selected-29KTGM{
+    transition              :               0.2s ease;
+    filter                  :               drop-shadow(0 0 5px #999) !important;
+}
+
+
+/* better spotify controls */
+
+.container-6sXIoE {
+	border-bottom           :               none !important;
+	margin-bottom           :               0 !important;
+}
+
+.container-6sXIoE .timeline-UWmgAx {
+	position                :               relative !important;
+}
+
+.container-6sXIoE .bar-g2ZMIm {
+	position                :               absolute !important;
+	bottom                  :               -6px !important;
+	left                    :               -8px !important;
+	width                   :               240px !important;
+	height                  :               53px !important;
+	margin                  :               0 !important;
+	-webkit-mask-image      :               linear-gradient(0.25turn, #0008, #0002) !important;
+	mask-image              :               linear-gradient(0.25turn, #0008, #0002) !important;
+	border-radius           :               0 !important;
+}
+
+.barFill-Dhkah7 {
+	border-radius           :               0 !important;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm {
+	height                  :               88px !important;
+}
+
+.container-6sXIoE .button-12Fmur:hover {
+	background-color        :               transparent !important;
+}
+
+.barFill-Dhkah7,
+.timeline-UWmgAx:hover .barFill-Dhkah7 {
+	background              :             #777 !important;
+}
+
+.inner-WRV6k5 {
+	z-index                 :               1 !important;
+}
+
+.barText-lmqc5O,
+.grabber-7sd5f5 {
+	display                 :               none !important;
+}
+
+
+
+
+
+/* banner fade out */
+.userPopout-2j1gM4 .banner-1YaD3N:after, #account .banner-1YaD3N:after{
+    content                 :               "";
+    position                :                absolute;
+    bottom                  :               0;
+    left                    :               0;
+    pointer-events          :               none;
+    background-image        :               linear-gradient(to bottom, rgba(255,255,255, 0), #18191C 97%);
+    width                   :               100%;
+    height                  :               4em;
+}
+
+
+/* spoiler message restyle */
+.spoiler-3aUoEX.hiddenSpoilers-19m4Pg{
+    filter                  :               blur(44px) !important;
+    transition              :               0.5s ease;
+    
+}
+.spoiler-3aUoEX.hiddenSpoilers-19m4Pg:hover{
+    filter                  :               blur(13px) !important;
+    box-shadow              :               none !important;
+    border-radius           :               0px !important;
+}
+.spoilerWarning-8ovW0v{
+    transition              :               0.5s ease;
+}
+
+
+/* shows memberlist roles on hover */
+.ChannelDms-channelmembers-wrap{
+    transition              :               all 1;
+    margin-right            :               -11.5%;
+}    
+.ChannelDms-channelmembers-wrap:hover{
+    transition              :               all 1s;
+    margin-right            :               0;
+}
+.membersGroup-2eiWxl {
+    height                  :               0px;
+    margin                  :               0px;
+    padding                 :               0px;
+    -webkit-transition      :               .4s ease;
+    transition              :               .4s ease;
+}
+.members-3WRCEx:hover .membersGroup-2eiWxl {
+    height                  :               11.9px;
+    margin                  :               10px;
+}
+
+
+
+
+/* boost tab restyle */
+.layerContainer-2v_Sit .perksModal-CLcR1c{
+    background-color        :             #121212;
+}
+.layerContainer-2v_Sit .perksModal-CLcR1c .ctaBar-Nhk8yY{
+    background-color        :             #202020;
+}
+#app-mount .layerContainer-2v_Sit .perksModal-CLcR1c .ctaBar-Nhk8yY .actions-b9dB88 .shinyButton-2Q9MDB {
+    background-color        :             rgba(85, 85, 85, 0.288);
+}
+#app-mount .layerContainer-2v_Sit .perksModal-CLcR1c .ctaBar-Nhk8yY .actions-b9dB88 .shinyButton-2Q9MDB:hover {
+    background-color        :             rgba(85, 85, 85, 0.438);
+}
+.layerContainer-2v_Sit .perksModal-CLcR1c .wrapper-3Zq_cJ .action-MXk_HA .button-f2h6uQ{
+    display                 :               none;
+}
+
+.layerContainer-2v_Sit .root-2zfUH6 .closeContent-1uXQiy .container-O54IuJ{
+    margin-right            :               -61%;
+    margin-top              :               20px;
+}
+
+
+
+
+/* fixes tts preview button in accessibility tab(settings) */
+
+.ttsPreviewWrapper-1d5bI6 .lookFilled-yCfaCM, .bd-settings-title .bd-button, .bd-controls .bd-addon-views .bd-button.selected{
+    background-color        :             #333333;
+}
+.ttsPreviewWrapper-1d5bI6 .lookFilled-yCfaCM:hover{
+    background-color        :             #33333385;
+}
+/* fixes bd menus in settings */
+.bd-select-options .bd-select-option.selected{
+    background-color        :             #333;
+}
+.bd-select-options .bd-select-option{
+    transition              :               0.5s ease;
+}
+#app-mount .bd-select-options .bd-select-option:hover{
+    background-color        :             rgba(51, 51, 51, 0.705);
+}
+#app-mount .bd-select-options{
+    background-color        :             #232323;
+}
+/*  game overlay notifications restyle(settings) */
+.notificationSettings-3dppO6 .wrapper-SdcMKg .option-1QI4c9.selected-18Wszc {
+    background-color        :             #555;
+}
+.notificationSettings-3dppO6 .wrapper-SdcMKg{
+    border-color            :             #555;
+}
+.notificationSettings-3dppO6 .wrapper-SdcMKg .option-1QI4c9{
+    background-color        :             #232323;
+}
+.notificationSettings-3dppO6 .wrapper-SdcMKg .option-1QI4c9:hover{
+    background-color        :             rgba(68, 68, 68, 0.527);
+}
+.notificationSettings-3dppO6 .wrapper-SdcMKg .option-1QI4c9, .notificationSettings-3dppO6 .wrapper-SdcMKg .disabled-35mc5w{
+    transition              :               0.5s ease;
+}
+/* fixes request data button in the privacy & safety tab */
+#app-mount #privacy-\&-safety-tab .marginBottom40-fvAlAV .flex-2S1XBF.flex-3BkGQD.directionRow-2Iu2A9 .button-f2h6uQ{
+    border-color            :             #555;
+}
+#app-mount #privacy-\&-safety-tab .marginBottom40-fvAlAV .flex-2S1XBF.flex-3BkGQD.directionRow-2Iu2A9 .button-f2h6uQ:hover{
+    background-color        :             #555;
+}
+/* fixes radio button borders not having border radius like the ones in privacy $ safety tab(settings) */
+.itemFilled-1cPbtg:hover .radioBar-3w9XY-{
+    border-radius           :               35px;
+}
+.itemFilled-1cPbtg .radioBar-3w9XY-{
+    transition              :               0.5s ease;
+}
+
+#app-mount .layer-1Ixpg3 .focusLock-2tveLW .modal-3Crloo.root-g14mjS{
+    background-color        :               transparent;
+}
+
+
+/* fixes reactions popup from the context menu */
+
+.focusLock-2tveLW .container-KM8BU6.fullscreenOnMobile-ixj0e3 .scroller-2GkvCq .reactionSelected-1aMb2K,.focusLock-2tveLW .container-KM8BU6.fullscreenOnMobile-ixj0e3 .scroller-2GkvCq .reactionDefault-1Sjj1f:hover {
+    margin-right            :               5px;
+    position                :               relative;
+}
+#app-mount .container-KM8BU6 .reactors-1VXca7{
+    background-color        :             #222222;
+}
+.focusLock-2tveLW .container-KM8BU6.fullscreenOnMobile-ixj0e3 .scroller-2GkvCq{
+    background-color        :             #161616;
+}       
+.focusLock-2tveLW .container-KM8BU6 .content-2a4AW9 .remove-19AQn_{
+    margin-right            :               5px;
+    transition              :               0.5s ease;
+    display                 :               inline-block;
+}
+
+/* makes Add a friend tab text white instead of green */
+#app-mount .item-3mHhwr[aria-controls="add_friend-tab"][aria-selected="true"] span{
+    color                   :             white;
+}
+
+
+/* bearable inbox */
+
+.recentMentionsPopout-2bI1ZN .header-145e10 {
+    background-color        :             #1a1a1a;
+}
+.recentMentionsPopout-2bI1ZN .container-iA3Qrz,
+.recentMentionsPopout-2bI1ZN .channel-3NJZ1V {
+    background-color        :             #1a1a1a;
+    border-radius           :               8px;
+    overflow                :               hidden;
+}
+
+.recentMentionsPopout-2bI1ZN .container-iA3Qrz {
+    margin                  :               16px;
+    padding-right           :               unset;
+}
+
+.recentMentionsPopout-2bI1ZN .channel-3NJZ1V {
+    margin                  :               16px 8px 16px 0;
+    padding-bottom          :               0;
+}
+
+.recentMentionsPopout-2bI1ZN .channelHeader-DFRX8q {
+    background-color        :             #1a1a1a;
+    height                  :               fit-content;
+    padding                 :               6px 16px;
+    border-bottom           :               thin solid var(--background-modifier-accent);
+}
+
+.recentMentionsPopout-2bI1ZN .messageContainer-3VTXBC,
+.recentMentionsPopout-2bI1ZN .messages-23can0 {
+    margin-left             :               unset;
+    background              :               none;
+    border-radius           :               unset;
+}
+
+/* header icon */
+.recentMentionsPopout-2bI1ZN .iconSizeMedium-2vzSua {
+    width                   :               24px;
+    height                  :               24px;
+}
+
+.recentMentionsPopout-2bI1ZN .iconActiveMedium-27_R5B {
+    border-radius           :               7px;
+}
+
+.recentMentionsPopout-2bI1ZN .dmIcon-1ZeAqq,
+.recentMentionsPopout-2bI1ZN .guildIcon-IklRcj {
+    margin-right            :               6px;
+}
+
+/* channel name section */
+.recentMentionsPopout-2bI1ZN .channelName-3APnhp svg path {
+    fill                    :               var(--channel-icon);
+}
+
+.recentMentionsPopout-2bI1ZN .channelName-3APnhp svg {
+    margin                  :               0 4px;
+}
+
+.recentMentionsPopout-2bI1ZN .channelNameSection-3OgeRa {
+    -webkit-box-orient      :               unset;
+    -ms-flex-direction      :               unset;
+    flex-direction          :               unset;
+}
+
+.recentMentionsPopout-2bI1ZN .heading-md-medium-2DVCeJ,
+.recentMentionsPopout-2bI1ZN .heading-md-normal-3Ytn6I {
+    font-size               :               16px;
+    line-height             :               20px;
+}
+
+.recentMentionsPopout-2bI1ZN .subtext-2-lYzF,
+.recentMentionsPopout-2bI1ZN .subtextContainer-1jbEbB {
+    margin-left             :               4px;
+    line-height             :               20px;
+    width                   :               fit-content;
+}
+
+/* buttons */
+.recentMentionsPopout-2bI1ZN .container-iA3Qrz .closeButton-3CiW2j {
+    opacity                 :               0;
+}
+
+.recentMentionsPopout-2bI1ZN .container-iA3Qrz:hover .closeButton-3CiW2j {
+    opacity                 :               1;
+}
+
+.recentMentionsPopout-2bI1ZN .tertiary-1e-lAP:not(.disabled-184-il),
+.recentMentionsPopout-2bI1ZN .tertiary-1e-lAP:hover:not(.disabled-184-il) {
+    background              :               none;
+}
+
+.recentMentionsPopout-2bI1ZN .collapseButton-39-IRc:hover {
+    color                   :               var(--interactive-active);
+}
+
+.recentMentionsPopout-2bI1ZN .collapseButton-39-IRc {
+    display                 :               flex;
+    align-items             :               center;
+    justify-content         :               center;
+    position                :               relative;
+    left                    :               unset;
+    width                   :               32px;
+    height                  :               32px;
+    padding                 :               unset;
+    margin-left             :               12px;
+}
+
+.recentMentionsPopout-2bI1ZN .messages-23can0>button:last-of-type {
+    margin-left             :               auto;
+}
+
+
+
+
+/* Disabling the light theme button in appearance tab */
+
+#app-mount #appearance-tab .marginTop8-24uXGp:nth-child(2) [role="radiogroup"] .item-2idW98:nth-child(2) .text-md-medium-2avxhQ::after{
+    content                 :               '  (disabled)';
+}
+#app-mount #appearance-tab .marginTop8-24uXGp:nth-child(2) [role="radiogroup"] .item-2idW98:nth-child(2):hover{
+    border-radius           :               10px;
+    background-color        :             #111;
+}
+#app-mount #appearance-tab .marginTop8-24uXGp:nth-child(2) [role="radiogroup"] .item-2idW98:nth-child(2){
+    border-radius           :               10px;
+    cursor                  :               not-allowed;
+    background-color        :             #111 !important;
+    border-color            :             rgba(255, 255, 255, 0.041);
+    color                   :             rgba(255, 255, 255, 0.137);
+}
+#app-mount #appearance-tab .marginTop8-24uXGp:nth-child(2) [role="radiogroup"] .item-2idW98:nth-child(2):active{
+    pointer-events          :               none !important;
+}
+
+
+/* fixing some bugs in full user popout */
+.focusLock-2tveLW[aria-label] .root-8LYsGj .date-YN6TCS{
+    position                :               relative;
+    top: 59px;
+    margin-left             :               65%;
+}
+.focusLock-2tveLW[aria-label] .root-8LYsGj .nameTag-2Nlmsy  {
+    margin-left             :               30px;
+}
+.focusLock-2tveLW[aria-label] .root-8LYsGj .badgeList-2aoHPw{
+    margin-left             :               1px;
+}
+.focusLock-2tveLW[aria-label] .root-8LYsGj .nameTagNoCustomStatus-3ocqoK + .date-YN6TCS{
+    margin-left             :               30px;
+    margin-bottom           :               60px;
+}
+
+/* fixing unread messages bars */
+.divider-IqmEqJ, .unreadPill-3nEWYM, .newMessagesBar-1hF-9G{
+    box-shadow              :               0 0 10px rgb(63, 63, 63);
+}
+.newMessagesBar-1hF-9G{
+    background-color        :             rgb(63, 63, 63);
+}
+
+
+
+/* when youre offline, it shows a less cruel and scary message. */
+
+.tipTitle-3FYEQp {
+	content: "";
+	font-size               :               0px;
+}
+.tipTitle-3FYEQp::before {
+	content                 :               "Hey...";
+	font-size: 12px;
+}
+.tip-1AwED_ {
+	content                 :               "";
+	font-size               :               0px;
+}
+.tip-1AwED_::before {
+	content                 :               "You're Offline :c";
+	font-size               :               16px;
+}
+.problems-CvGwpb.slideIn-VAD-dp {
+	display                 :               none;
+}
+.container-2RRFHK.fixClipping-3GOd_d {
+	background              :             rgba(0, 0, 0, 0.1);
+	backdrop-filter         :               blur(5px);
+}
+body #app-mount .tooltip-14MtrL{
+    filter                  :               drop-shadow(0 0 2px rgba(153, 153, 153, 0.705));
+}
+
+
+
+/* hides nitro button svgs cause theyre annoying asf */
+.premiumLabel-3HPvdB svg, .offerBadge-1KDtMz{
+    display                 :               none;
+}
+
+/* hides logout button svg */
+.item-3XjbnG[aria-controls="logout-tab"] .tabBarItemContainer-2HdIlr svg{
+    display                 :               none;
+}
+
+/* Emoji Auto-Fill Animation */
+.base-2v-uc0 {
+    transition              :               all 0.5s;
+}
+.scroller-18M1mG .clickable-2V8YKY .base-2v-uc0:hover {
+    transition              :               all 0s;
+    transform               :               scale(1.01);
+}
+.scroller-18M1mG .clickable-2V8YKY{
+    width                   :               98%;
+    margin-left             :               .7%;
+}
+
+
+
+/*Embeds*/
+.embedFull-1HGV2S{
+    background-color: #191919;
+    border: 2px solid var(--background-accent);
+    border-radius: 10px;
+}
+
+/* Discord Links */
+.messageContent-2t3eCI :is(a[href^="https://discord.com/channels"]:not([href^=channels]), a[href^="https://canary.discord.com/channels"]:not([href^=channels]))::before {
+    position: absolute;
+    content: "";
+    background: rgba(255,255,255,.8);
+    height: 16px;
+    width: 16px;
+    margin-top: 4px;
+    margin-left: 2px;
+    -webkit-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='copy_message_link' d='M10.473,13.527c0.444,0.423 0.444,1.116 -0,1.538c-0.423,0.423 -1.116,0.423 -1.538,0c-2.098,-2.101 -2.098,-5.556 -0,-7.657l3.834,-3.834c2.101,-2.099 5.556,-2.099 7.657,-0c2.099,2.101 2.099,5.556 0,7.657l-1.613,1.614c0.01,-0.888 -0.13,-1.776 -0.434,-2.621l0.509,-0.52c0.613,-0.607 0.959,-1.434 0.959,-2.296c-0,-0.863 -0.346,-1.69 -0.959,-2.296c-0.606,-0.613 -1.433,-0.959 -2.296,-0.959c-0.862,0 -1.689,0.346 -2.296,0.959l-3.823,3.823c-0.613,0.606 -0.959,1.434 -0.959,2.296c0,0.862 0.346,1.69 0.959,2.296Zm3.054,-4.592c0.423,-0.423 1.116,-0.423 1.538,-0c2.098,2.101 2.098,5.556 0,7.657l-3.834,3.834c-2.101,2.099 -5.556,2.099 -7.657,0c-2.099,-2.101 -2.099,-5.556 -0,-7.657l1.613,-1.614c-0.01,0.888 0.13,1.776 0.434,2.632l-0.509,0.509c-0.613,0.607 -0.959,1.434 -0.959,2.296c0,0.863 0.346,1.69 0.959,2.296c0.606,0.613 1.433,0.959 2.296,0.959c0.862,-0 1.689,-0.346 2.296,-0.959l3.823,-3.823c0.613,-0.606 0.959,-1.434 0.959,-2.296c-0,-0.862 -0.346,-1.69 -0.959,-2.296c-0.212,-0.199 -0.333,-0.478 -0.333,-0.769c-0,-0.291 0.121,-0.57 0.333,-0.769Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect id='Filled' x='0' y='0' width='24' height='24' style='fill:none;'/%3E%3Cg id='Filled1' serif:id='Filled'%3E%3Cg id='Context'%3E%3Cpath id='copy_message_link' d='M10.473,13.527c0.444,0.423 0.444,1.116 -0,1.538c-0.423,0.423 -1.116,0.423 -1.538,0c-2.098,-2.101 -2.098,-5.556 -0,-7.657l3.834,-3.834c2.101,-2.099 5.556,-2.099 7.657,-0c2.099,2.101 2.099,5.556 0,7.657l-1.613,1.614c0.01,-0.888 -0.13,-1.776 -0.434,-2.621l0.509,-0.52c0.613,-0.607 0.959,-1.434 0.959,-2.296c-0,-0.863 -0.346,-1.69 -0.959,-2.296c-0.606,-0.613 -1.433,-0.959 -2.296,-0.959c-0.862,0 -1.689,0.346 -2.296,0.959l-3.823,3.823c-0.613,0.606 -0.959,1.434 -0.959,2.296c0,0.862 0.346,1.69 0.959,2.296Zm3.054,-4.592c0.423,-0.423 1.116,-0.423 1.538,-0c2.098,2.101 2.098,5.556 0,7.657l-3.834,3.834c-2.101,2.099 -5.556,2.099 -7.657,0c-2.099,-2.101 -2.099,-5.556 -0,-7.657l1.613,-1.614c-0.01,0.888 0.13,1.776 0.434,2.632l-0.509,0.509c-0.613,0.607 -0.959,1.434 -0.959,2.296c0,0.863 0.346,1.69 0.959,2.296c0.606,0.613 1.433,0.959 2.296,0.959c0.862,-0 1.689,-0.346 2.296,-0.959l3.823,-3.823c0.613,-0.606 0.959,-1.434 0.959,-2.296c-0,-0.862 -0.346,-1.69 -0.959,-2.296c-0.212,-0.199 -0.333,-0.478 -0.333,-0.769c-0,-0.291 0.121,-0.57 0.333,-0.769Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;
+}
+.messageContent-2t3eCI :is(a[href^="https://discord.com/channels"]:not([href^=channels]), a[href^="https://canary.discord.com/channels"]:not([href^=channels])) {
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+}
+.messageContent-2t3eCI :is(a[href^="https://discord.com/channels"]:not([href^=channels]), a[href^="https://canary.discord.com/channels"]:not([href^=channels]))::after {
+    content: "Jump to Message";
+    font-size: 11pt;
+    line-height: 10px;
+    color: rgba(255,255,255,.8);
+    background: #464646;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.messageContent-2t3eCI :is(a[href^="https://discord.com/channels"]:not([href^=channels]), a[href^="https://canary.discord.com/channels"]:not([href^=channels])):hover::after{
+    content: "Jump to Message";
+    background: transparent;
+}
+body #app-mount div.mention-3XBnnZ{
+    background-color: #666;
+    
+}   
+
+
+/* tooltip fade in animation */
+
+.layerContainer-2v_Sit .tooltip-14MtrL.tooltipRight-2TSb42 {
+    animation: fadeFromRight 140ms;
+}
+
+.layerContainer-2v_Sit .tooltip-14MtrL.tooltipBottom-2WzfVx {
+    animation: fadeFromBottom 140ms;
+}
+
+.layerContainer-2v_Sit .tooltip-14MtrL[class*="tooltipLeft-"] {
+    animation: fadeFromLeft 140ms;
+}
+
+.layerContainer-2v_Sit .tooltip-14MtrL.tooltipTop-1wv5UJ{
+    animation: fadeFromTop 140ms;
+}
+@keyframes fadeFromTop {
+    0% {opacity: 0;transform: translateY(-50%);}
+    100% {opacity: 1;transform: none;}
+}
+
+@keyframes fadeFromRight {
+    0% {opacity: 0;transform: translateX(50%);}
+    100% {opacity: 1;transform: none;}
+}
+
+@keyframes fadeFromBottom {
+    0% {opacity: 0;transform: translateY(50%);}
+    100% {opacity: 1;transform: none;}
+}
+
+@keyframes fadeFromLeft {
+    0% {opacity: 0;transform: translateX(-50%);}
+    100% {opacity: 1;transform: none;}
+}
+
+
+/* Fixes nonsense glitches */
+html, span:not(.spinner-item) {
+    backface-visibility: hidden;
+}
+html body #app-mount .wrapper-28eC3z foreignObject {
+  mask: none !important;
+  -webkit-mask: none !important;
+  border-radius: 50% !important;
+}
+
+/* removes the discord experiments nitro buttons(theyre causing bugs) */
+.tutorialContainer-1pL9QS + .listItem-3SmSlK > .pill-1NRFie ~ *,
+.scroller-3X7KbA > [aria-label] + .listItem-3SmSlK,
+.tree-3agP2X + .fixedBottomList-1yrBla{
+    display: none;
+}
+/* changes the live tag in vc into a background gradient */
+.voiceUser-3nRK-K .live-1V2D-f {
+    font-size: 0;
+    background: linear-gradient(to right, transparent, var(--background-secondary));
+    border-radius: 5px;
+    margin-right: 237px;
+    width: 70%;
+    margin-top: 2px;
+    z-index: -99;
+    height: 99%;
+    transition: .5s ease;
+    position: absolute;
+}
+.voiceUser-3nRK-K:hover .live-1V2D-f, .voiceUser-3nRK-K .content-1Tgc42:hover{
+    border-radius: 25px;
+}
+.voiceUser-3nRK-K .content-1Tgc42{
+    transition: .5s ease;
+    border-radius: 0px;
+}
+
+
+/* channel highlights experimnt */
+.newMessagesPillContainer-1EFmTu :is(.newMessagesPill-2YdO-e, .newMessagesClear-2LQVHt){
+    background-color: #222222;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 15%, 0.69), 0 3px 16px hsla(0, 0%, 25%, 0.47);
+    transition: 0.5s ease;
+    text-shadow: 0 0 15px currentColor;
+}
+.newMessagesPillContainer-1EFmTu :is(.newMessagesPill-2YdO-e, .newMessagesClear-2LQVHt):hover{
+    background-color: #282828;
+    box-shadow: 0 0 0 2px hsla(0, 0%, 15%, 0.69), 0 3px 16px hsla(0, 0%, 25%, 0.678);
+}
+
+
+/* bd toasts restyle */
+.toast, .bd-toast {
+    background: #171717 !important;
+    border: 1px solid #3B3B3B !important;
+    border-radius: 10px !important;
+    color: #696969 !important;
+    text-shadow: 0 0 3px #696969 !important;
+    box-shadow: 0 0 5px #3B3B3B !important;
+}
+.toast:last-child, .bd-toast:last-child{
+    margin-bottom: 50px; 
+}
+.bd-toast.toast-success.icon {
+    padding-left: 10px;
+}
+
+
+
+.root-g14mjS > [style="position: relative; width: 440px; height: 660px; overflow: hidden;"] > [style="position: absolute; flex-direction: column; backface-visibility: hidden; width: 440px; transform: translate3d(0px, -50%, 0px) scale(1, 1); top: 50%; left: auto; right: auto;"] .content-2hZxGK::-webkit-scrollbar{
+    display: none;
+}
+.root-g14mjS > [style="position: relative; width: 440px; height: 660px; overflow: hidden;"] > [style="position: absolute; flex-direction: column; backface-visibility: hidden; width: 440px; transform: translate3d(0px, -50%, 0px) scale(1, 1); top: 50%; left: auto; right: auto;"] .content-2hZxGK > div:not([class]) > .childButton-3o_dlg{
+    transition: 0.5s ease;
+    border: 1px solid var(--background-modifier-accent);
+}
+.root-g14mjS > [style="position: relative; width: 440px; height: 660px; overflow: hidden;"] > [style="position: absolute; flex-direction: column; backface-visibility: hidden; width: 440px; transform: translate3d(0px, -50%, 0px) scale(1, 1); top: 50%; left: auto; right: auto;"] .content-2hZxGK > div:not([class]) > .childButton-3o_dlg:hover{
+    border-radius: 35px;
+}
+.messagePreviewContainer-1oR1Oc .wrapper-30-Nkg .contents-2MsGLg *{
+    user-select: none;
+    pointer-events: none;
+}
+.messagePreviewContainer-1oR1Oc{
+    background-color: #131313;
+}
+
+/* message links restyle */
+.anchor-1MIwyf.anchorUnderlineOnHover-2qPutX[title][href][role=button]{
+    color: #adadad;
+    text-shadow: 0 0 10px currentColor;
+} 
+
+
+/* restyling some containers */
+.rowContainer-3t7486{
+    background-color: #131313;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+}
+.rowContainer-3t7486:hover{
+    background-color: #181818;
+    border-radius: 35px;
+}
+.container-2O1UgZ .combobox-3_6kOi > div:not([class], [id], [aria-label], [aria-controls]) > .list-1MBHYC .content-2a4AW9 .item-1BCeuB{
+    border-radius: 25px;
+    transition: .5s ease;
+}
+.container-2O1UgZ .combobox-3_6kOi > div:not([class], [id], [aria-label], [aria-controls]) > .list-1MBHYC .content-2a4AW9 .item-1BCeuB:hover{
+    border-radius: 5px;
+}
+
+/* slightly re-positioning the icon on the party mode tab in settings */
+.item-3XjbnG[aria-controls="powermode-settings-tab" i][aria-label] > .tabBarItemContainer-2HdIlr > img[src][class]{
+    margin: 0 0 5px 5px
+}
+
+/* hide wumpus from user popout */
+.footer-3naVBw > .wumpusWrapper-3ReSr0{
+    display: none;
+}
+
+/* userpopout bug fix */
+.root-8LYsGj > .topSection-13QKHs > header .headerTop-1PNKck > svg{
+    margin-left: 115px;
+    margin-top: -12px;
+}
+
+
+/* fixes charcounter not being visible */
+.charCounter-7fw40k{
+  margin-bottom: 70px;
+}
+
+
+/* bug fixes */
+.container-YkUktl .withTagAsButton-OsgQ9L, .container-YkUktl .withTagless-10ooWt{
+  background:transparent;
+}
+.guilds-2JjMmN .scrollerBase-_bVAAt {
+  max-height: calc(100% - 25px) !important;
+}
