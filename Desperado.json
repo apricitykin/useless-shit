@@ -115,7 +115,7 @@
     "WHITE": "#FFFFFF"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#121212"
+    "CHAT_GREY": "#000000"
   },
   "background": {
     "blur": 0,
