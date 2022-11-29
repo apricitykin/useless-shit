@@ -149,7 +149,7 @@
     "PRIMARY_DARK_900": "#210001"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#250422"
+    "CHAT_GREY": "#210001"
   },
   "background": {
     "blur": 0,
