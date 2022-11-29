@@ -1,5 +1,11 @@
 {
   "name": "Lemnity",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
 "KEYBOARD": ["#1C1C1C", "#1C1C1C"],
 		"BACKGROUND_PRIMARY": ["#1C1C1C", "#1C1C1C"],
