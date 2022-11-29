@@ -116,6 +116,6 @@
     "WHITE": "#ffffff"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#121212"
+    "CHAT_GREY": "#000000"
   }
 }
