@@ -1,5 +1,11 @@
 {
   "name": "StudyWithMe",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "KEYBOARD": [
       "#d16d7e",
