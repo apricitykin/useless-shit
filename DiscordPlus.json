@@ -4,7 +4,7 @@
   "description": "I love sunsets",
   "authors": [
     {
-      "name": "Fel1x#0666",
+      "name": "Abby",
       "id": "499287211381096458"
     }
   ],
@@ -149,7 +149,7 @@
     "PRIMARY_DARK_900": "#210001"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#250422"
+    "CHAT_GREY": "#210001"
   },
   "background": {
     "blur": 0,

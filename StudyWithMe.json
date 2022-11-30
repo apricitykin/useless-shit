@@ -1,5 +1,12 @@
 {
   "name": "StudyWithMe",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "KEYBOARD": [
       "#d16d7e",
@@ -111,7 +118,7 @@
     ]
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#782828"
+    "CHAT_GREY": "#e8909f"
   },
   "colours": {
     "PRIMARY_DARK": "#a53a3a",

@@ -128,5 +128,8 @@
     "PRIMARY_DARK_900": "#f716f7",
     "BRAND_NEW": "#bb68d9",
     "WHITE": "#3ad3e0"
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#000000"
   }
 }

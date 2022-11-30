@@ -2,6 +2,12 @@
   "name": "BetterLight",
   "description": "Better lightmode for outside usage",
   "version": ":3",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "HEADER_PRIMARY": [
       "#000000",

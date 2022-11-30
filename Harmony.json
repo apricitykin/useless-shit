@@ -1,6 +1,12 @@
 {
   "name": "Harmony",
-  "author": "Felix#0236",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "KEYBOARD": [
       "#000000",
@@ -106,6 +112,6 @@
     "WHITE": "#FFFFFF"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#121212"
+    "CHAT_GREY": "#000000"
   }
 }

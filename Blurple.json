@@ -1,5 +1,12 @@
 {
   "name": "Blurple",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "KEYBOARD": [
       "#000000",

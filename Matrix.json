@@ -1,5 +1,12 @@
 {
   "name": "Matrix",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Abby",
+      "id": "499287211381096458"
+    }
+  ],
   "theme_color_map": {
     "KEYBOARD": [
       "#000000",
@@ -111,7 +118,7 @@
     ]
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#191919"
+    "CHAT_GREY": "#000000"
   },
   "colours": {
     "PRIMARY_DARK": "#3aa553",

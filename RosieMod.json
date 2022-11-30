@@ -4,7 +4,7 @@
   "description": "A nice combination of dark grey and purple",
   "authors": [
     {
-      "name": "Fel1x#2802",
+      "name": "Abby",
       "id": "499287211381096458"
     }
   ],
@@ -151,7 +151,7 @@
     "STATUS_GREEN": "#d95f8a"
   },
   "unsafe_colors": {
-    "CHAT_GREY": "#171717"
+    "CHAT_GREY": "#1f2026"
   },
   "background": {
     "blur": 1,
