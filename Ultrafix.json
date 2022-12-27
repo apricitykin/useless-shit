@@ -1,0 +1,122 @@
+{
+  "name": "Ultrafix",
+  "description": "Dark Rosie theme!!",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "flower",
+      "id": "836452332387565589"
+    }
+  ],
+  "theme_color_map": {
+    "TEXT_NORMAL": [
+      "#FBFBFB",
+      "#2e3338"
+    ],
+    "TEXT_MUTED": [
+      "#b1b1b1",
+      "#747f8d"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#b9bbbe",
+      "#4f5660"
+    ],
+    "INTERACTIVE_HOVER": [
+      "#dcddde",
+      "#2e3338"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#c9ced0",
+      "#060607"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#4f545c",
+      "#c7ccd1"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "#101014",
+      "#ffffff"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#17161b",
+      "#f2f3f5"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#17161b",
+      "#ebedef"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#101014",
+      "#e3e5e8"
+    ],
+    "BACKGROUND_ACCENT": [
+      "#17161b",
+      "#747f8d"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#17161b",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "#101014",
+      "#f8f9f9"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#17161b",
+      "#ffffff"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#17161b",
+      "#ffffff"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "#151419",
+      "#FFFFFF"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "#1D1C21",
+      "hsla(214, 9.9%, 50.4%, 0.24)"
+    ],
+    "SCROLLBAR_THIN_THUMB": [
+      "#2a1858",
+      "hsla(217, 7.6%, 33.5%, 0.3)"
+    ],
+    "SCROLLBAR_THIN_TRACK": [
+      "transparent",
+      "hsla(0, 0%, 0%, 0)"
+    ],
+    "SCROLLBAR_AUTO_THUMB": [
+      "#2a1858",
+      "#cccccc"
+    ],
+    "SCROLLBAR_AUTO_TRACK": [
+      "rgba(0, 0, 0, 0.1)",
+      "#f2f2f2"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#101014",
+      "#ebedef"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#4a4a52",
+      "#6a7480"
+    ],
+    "KEYBOARD": [
+      "#101014",
+      "#FFFFFF"
+    ],
+    "CHANNEL_ICON": [
+      "#4a4a52",
+      "#4a4a52"
+    ]
+  },
+  "colours": {
+    "PRIMARY_DARK_600": "#101014",
+    "PRIMARY_DARK_630": "#101014",
+    "PRIMARY_DARK_800": "#101014",
+    "BRAND_NEW": "#6e6af6"
+  },
+  "unsafe_colors": {
+    "CHAT_GREY": "#101014"
+  }
+}
