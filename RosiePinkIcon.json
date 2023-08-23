@@ -101,7 +101,7 @@
         "ORANGE_700":                   "#8f5971",
         "YELLOW_260":                   "#ff9ecb",
         "YELLOW_300":                   "#f598c3",
-        "YELLOW_330":                   "#ed93bd",
+        "YELLOW_330":                   "#ffbaf2",
         "YELLOW_345":                   "#e890b9",
         "YELLOW_360":                   "#e68eb7",
         "YELLOW_400":                   "#db88af",
@@ -159,8 +159,8 @@
           "StatusMobileOnline": ["#09bd63"],
           "StatusIdle": ["#ffd401"],
           "StatusDND": ["#ff611a"],
-          "StatusOffline": ["#015bd5"],
-          "StatusOnline": ["#09bd63"]}
+          "StatusOffline": ["#ffbaf2"],
+          "StatusOnline": ["#ffbaf2"]}
      },
     "spec": 2
 }
