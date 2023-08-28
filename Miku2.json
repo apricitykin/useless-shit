@@ -1,0 +1,177 @@
+{
+    "name": "Miku2",
+    "description": "Miku 2.0",
+    "authors": [
+        {
+            "name": "panniku",
+            "id": "703634705152606318"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#E1E3E5"
+        ],
+        "HEADER_SECONDARY": [
+            "#8A9297"
+        ],
+        "TEXT_NORMAL": [
+            "#E1E3E5"
+        ],
+        "TEXT_MUTED": [
+            "#8A9197"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#C0C7CD"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#374955"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#CBE4FA"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#485158"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#171C20"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#202A32"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#202A32"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#171C20"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#364756"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#202A32"
+        ],
+        "BACKGROUND_FLOATING": [
+            "#171C2073"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#171C20"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#202A32"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#1E2529"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#1E2529"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#1E2529"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#374955"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#40474D"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#00000000"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "#00000000"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#00000000"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#00000000"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#202A32"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#707980"
+        ],
+        "TEXT_LINK": [
+            "#76D1FF"
+        ],
+        "TEXT_DANGER": [
+            "#76D1FF"
+        ],
+        "KEYBOARD": [
+            "#364756"
+        ],
+        "CHANNEL_ICON": [
+            "#707980"
+        ],
+        "CHAT_BACKGROUND": [
+            "#171C20"
+        ],
+        "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+            "#202A32"
+        ],
+        "SPOILER_HIDDEN_BACKGROUND": [
+            "#40474D"
+        ],
+        "SPOILER_REVEALED_BACKGROUND": [
+            "#40474D"
+        ],
+        "BACKGROUND_MENTIONED": [
+            "#76D1FF1a"
+        ],
+        "BACKGROUND_MENTIONED_HOVER": [
+            "#1E2529"
+        ],
+        "LOGO_PRIMARY": [
+            "#CBE4FA"
+        ],
+        "MENTION_BACKGROUND": [
+            "#364756"
+        ],
+        "MENTION_FOREGROUND": [
+            "#CBE4FA"
+        ],
+        "CHANNEL_TEXT_AREA_PLACEHOLDER": [
+            "#C0C7CD"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY_100": "#E1E3E5",
+        "PRIMARY_200": "#E1E3E5",
+        "PRIMARY_300": "#E1E3E5",
+        "PRIMARY_360": "#C0C7CD80",
+        "PRIMARY_400": "#8A9297",
+        "PRIMARY_460": "#202A32",
+        "PRIMARY_500": "#171C20",
+        "PRIMARY_600": "#171C20",
+        "PRIMARY_630": "#202A32",
+        "PRIMARY_660": "#364756",
+        "PRIMARY_700": "#202A32",
+        "PRIMARY_800": "#202A32",
+        "BRAND_260": "#CBE4FA",
+        "BRAND_360": "#76D1FF",
+        "BRAND_500": "#364756",
+        "BRAND_560": "#364756",
+        "BRAND_600": "#202A32",
+        "YELLOW_300": "#8AC6FF",
+        "GREEN_360": "#76D1FF",
+        "GREEN_600": "#76D1FF",
+        "RED_345": "#76D1FF",
+        "RED_400": "#374955",
+        "WHITE_500": "#E1E3E5"
+    },
+       "plus":{
+       "version":"0",
+       "iconpack":"rosiecord-iconsax",
+       "icons":{
+          "ic_new_pins":"#eb6f92",
+          "StatusStreaming": "#c4a7e7",
+          "StatusMobileOnline": "#76D1FF",
+          "StatusIdle": "#dfff76",
+          "StatusDND": "#f24646",
+          "StatusOffline": "#4b304d",
+          "StatusOnline": "#76D1FF"
+ }
+},
+    "spec": 2
+}
