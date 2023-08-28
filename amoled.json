@@ -1,0 +1,28 @@
+{
+  "name": "amoled for siyu",
+  "description": "meow lol",
+  "authors": [
+    {
+      "name": "Mylloon",
+      "id": "158260864623968257"
+    }
+  ],
+  "spec": 2,
+  "semanticColors": {
+    "BACKGROUND_TERTIARY": ["#000000"],
+    "BACKGROUND_ACCENT": ["#08080A"],
+    "SPOILER_HIDDEN_BACKGROUND": ["#1E1F22"],
+    "SPOILER_REVEALED_BACKGROUND": ["#232428"]
+  },
+  "rawColors": {
+    "PRIMARY_600": "#000000",
+    "PRIMARY_630": "#000000",
+    "PRIMARY_660": "#08080A",
+    "PRIMARY_700": "#08080A",
+    "PRIMARY_800": "#08080A"
+  },
+         "plus":{
+       "version":"0",
+       "iconpack":"rosiecord-iconsax"
+ }
+}
