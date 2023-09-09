@@ -1,0 +1,147 @@
+{
+    "name": "Blurple2",
+    "description": "A theme based on Discord's accent color, Blurple.",
+    "authors": [
+        {
+            "name": "vm_akari",
+            "id": "499287211381096458"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#ffffff"
+        ],
+        "HEADER_SECONDARY": [
+            "#b8b8b8"
+        ],
+        "TEXT_NORMAL": [
+            "#e8e8e8"
+        ],
+        "TEXT_MUTED": [
+            "#b8b8b8"
+        ],
+        "TEXT_DANGER": [
+            "#5865F2"
+        ],
+        "TEXT_LINK": [
+            "#5865F2"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#b8b8b8"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#DCDDDE"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#ffffff"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#969696"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#232861"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#232861"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#15193d"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#232861"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#232861"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#232861"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#232861"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#34396b"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#232861"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#232861"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#15193d"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#15193d"
+        ],
+        "KEYBOARD": [
+            "#15193d"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#ffffff"
+        ],
+        "CHANNEL_ICON": [
+            "#b8b8b8"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#b8b8b8"
+        ],
+        "CHAT_BACKGROUND": [
+            "#232860"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY": "#232860",
+        "PRIMARY_100": "#ffffff",
+        "PRIMARY_200": "#b8b8b8",
+        "PRIMARY_300": "#5865F2",
+        "PRIMARY_360": "#b8b8b8",
+        "PRIMARY_400": "#5865F2",
+        "PRIMARY_500": "#232861",
+        "PRIMARY_600": "#232860",
+        "PRIMARY_630": "#232860",
+        "PRIMARY_660": "#232861",
+        "PRIMARY_700": "#232860",
+        "PRIMARY_800": "#232860",
+        "PRIMARY_900": "#15193d",
+        "YELLOW_300": "#5865F2",
+        "BRAND_260": "#5865F2",
+        "BRAND_360": "#5865F2",
+        "BRAND_500": "#5865F2",
+        "BRAND_560": "#7581fa",
+        "GREEN_360": "#5865F2",
+        "RED_400": "#5865F2",
+        "ORANGE_345": "#5865F2",
+        "RED_560": "#5865F2",
+        "GREEN_345": "#5865F2",
+        "BLUE_345": "#5865F2",
+        "WHITE_500": "#ffffff",
+        "BLACK_500": "#15193dba"
+       
+    },
+
+    "plus": {
+    "version": 0,
+    "icons": {
+          "StatusStreaming": "#5865F2",
+          "StatusMobileOnline": "#5865F2",
+          "StatusIdle": "#5865F2",
+          "StatusDND": "#5865F2",
+          "StatusOffline": "#5865F2",
+          "StatusOnline": "#5865F2"
+          }
+    },
+    "spec": 2
+}
