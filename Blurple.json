@@ -1,139 +1,147 @@
 {
-  "name": "Blurple",
-  "version": "1.0",
-  "authors": [
-    {
-      "name": "Abby",
-      "id": "499287211381096458"
-    }
-  ],
-  "theme_color_map": {
-    "KEYBOARD": [
-      "#000000",
-      "#FFFFFF"
+    "name": "Blurple",
+    "description": "A theme based on Discord's accent color, Blurple.",
+    "authors": [
+        {
+            "name": "vm_akari",
+            "id": "499287211381096458"
+        }
     ],
-    "CHANNELS_DEFAULT": [
-      "#4150c4",
-      "#84f473"
-    ],
-    "HEADER_PRIMARY": [
-      "#4150c4",
-      "#FFFFFF"
-    ],
-    "HEADER_SECONDARY": [
-      "#4150c4",
-      "#FFFFFF"
-    ],
-    "INTERACTIVE_ACTIVE": [
-      "#4173c4",
-      "#FFFFFF"
-    ],
-    "INTERACTIVE_MUTED": [
-      "#7c9acf",
-      "#FFFFFF"
-    ],
-    "INTERACTIVE_NORMAL": [
-      "#77aaed",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MENTIONED_HOVER": [
-      "#4150c4",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_NESTED_FLOATING": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MOBILE_PRIMARY": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MOBILE_SECONDARY": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MODIFIER_ACTIVE": [
-      "#4150c4",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MODIFIER_SELECTED": [
-      "#4150c4",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MODIFIER_ACCENT": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MODIFIER_HOVER": [
-      "#1d2822",
-      "#FFFFFF"
-    ],
-    "CHANNELTEXTAREA_BACKGROUND": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_PRIMARY": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_SECONDARY": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_SECONDARY_ALT": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_TERTIARY": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_ACCENT": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_FLOATING": [
-      "#000000",
-      "#FFFFFF"
-    ],
-    "BACKGROUND_MENTIONED": [
-      "#bb68d9",
-      "#FFFFFF"
-    ],
-    "TEXT_NORMAL": [
-      "#ffffff",
-      "#FFFFFF"
-    ],
-    "TEXT_MUTED": [
-      "#4ea2b5",
-      "#FFFFFF"
-    ],
-    "TEXT_LINK": [
-      "#752fed",
-      "#FFFFFF"
-    ],
-    "TEXT_DANGER": [
-      "#72c1cf",
-      "#FFFFFF"
-    ]
-  },
-  "unsafe_colors": {
-    "CHAT_GREY": "#000000"
-  },
-  "colours": {
-    "PRIMARY_DARK": "#4150c4",
-    "PRIMARY_DARK_100": "#4150c4",
-    "PRIMARY_DARK_200": "#000000",
-    "PRIMARY_DARK_300": "#4150c4",
-    "PRIMARY_DARK_360": "#4150c4",
-    "PRIMARY_DARK_400": "#4150c4",
-    "PRIMARY_DARK_500": "#4150c4",
-    "PRIMARY_DARK_600": "#000000",
-    "PRIMARY_DARK_630": "#000000",
-    "PRIMARY_DARK_700": "#000000",
-    "PRIMARY_DARK_800": "#000000",
-    "PRIMARY_DARK_900": "#4173c4",
-    "BRAND_NEW": "#4150c4",
-    "WHITE": "#ffffff"
-  }
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#ffffff"
+        ],
+        "HEADER_SECONDARY": [
+            "#b8b8b8"
+        ],
+        "TEXT_NORMAL": [
+            "#e8e8e8"
+        ],
+        "TEXT_MUTED": [
+            "#b8b8b8"
+        ],
+        "TEXT_DANGER": [
+            "#5865F2"
+        ],
+        "TEXT_LINK": [
+            "#5865F2"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#b8b8b8"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#DCDDDE"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#ffffff"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#969696"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#232861"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#232861"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#15193d"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#15193d"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#232861"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#232861"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#232861"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#232861"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#34396b"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#232861"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#232861"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#15193d"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#15193d"
+        ],
+        "KEYBOARD": [
+            "#15193d"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#ffffff"
+        ],
+        "CHANNEL_ICON": [
+            "#b8b8b8"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#b8b8b8"
+        ],
+        "CHAT_BACKGROUND": [
+            "#15193d"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY": "#15193d",
+        "PRIMARY_100": "#ffffff",
+        "PRIMARY_200": "#b8b8b8",
+        "PRIMARY_300": "#5865F2",
+        "PRIMARY_360": "#b8b8b8",
+        "PRIMARY_400": "#5865F2",
+        "PRIMARY_500": "#232861",
+        "PRIMARY_600": "#15193d",
+        "PRIMARY_630": "#15193d",
+        "PRIMARY_660": "#232861",
+        "PRIMARY_700": "#15193d",
+        "PRIMARY_800": "#15193d",
+        "PRIMARY_900": "#15193d",
+        "YELLOW_300": "#5865F2",
+        "BRAND_260": "#5865F2",
+        "BRAND_360": "#5865F2",
+        "BRAND_500": "#5865F2",
+        "BRAND_560": "#7581fa",
+        "GREEN_360": "#5865F2",
+        "RED_400": "#5865F2",
+        "ORANGE_345": "#5865F2",
+        "RED_560": "#5865F2",
+        "GREEN_345": "#5865F2",
+        "BLUE_345": "#5865F2",
+        "WHITE_500": "#ffffff",
+        "BLACK_500": "#15193dba"
+       
+    },
+
+    "plus": {
+    "version": 0,
+    "icons": {
+          "StatusStreaming": "#5865F2",
+          "StatusMobileOnline": "#5865F2",
+          "StatusIdle": "#5865F2",
+          "StatusDND": "#5865F2",
+          "StatusOffline": "#5865F2",
+          "StatusOnline": "#5865F2"
+          }
+    },
+    "spec": 2
 }
