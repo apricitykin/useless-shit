@@ -1,0 +1,148 @@
+{
+    "name": "Voicemod",
+    "description": "A theme based on Voicemod Voice Changer",
+    "authors": [
+        {
+            "name": "VM_Akari",
+            "id": "499287211381096458"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#ffffff"
+        ],
+        "HEADER_SECONDARY": [
+            "#b8b8b8"
+        ],
+        "TEXT_NORMAL": [
+            "#b8b8b8"
+        ],
+        "TEXT_MUTED": [
+            "#b8b8b8"
+        ],
+        "TEXT_DANGER": [
+            "#5865F2"
+        ],
+        "TEXT_LINK": [
+            "#00fff6"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#b8b8b8"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#DCDDDE"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#06d3cc"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#969696"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#171717"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#171717"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#171717"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#171717"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#171717"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#171717"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#171717"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#2b2b2b"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#2b2b2b"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#171717"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#171717"
+        ],
+        "KEYBOARD": [
+            "#2b2b2b"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#ffffff"
+        ],
+        "CHANNEL_ICON": [
+            "#009c97"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#b8b8b8"
+        ],
+        "CHAT_BACKGROUND": [
+            "#2b2b2b"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY": "#171717",
+        "PRIMARY_100": "#ffffff",
+        "PRIMARY_200": "#b8b8b8",
+        "PRIMARY_300": "#156564",
+        "PRIMARY_360": "#b8b8b8",
+        "PRIMARY_400": "#5865F2",
+        "PRIMARY_500": "#2b2b2b",
+        "PRIMARY_600": "#2b2b2b",
+        "PRIMARY_630": "#2b2b2b",
+        "PRIMARY_660": "#2b2b2b",
+        "PRIMARY_700": "#171717",
+        "PRIMARY_800": "#171717",
+        "PRIMARY_900": "#2b2b2b",
+        "YELLOW_300": "#156564",
+        "BRAND_260": "#156564",
+        "BRAND_360": "#156564",
+        "BRAND_500": "#156564",
+        "BRAND_560": "#156564",
+        "GREEN_360": "#156564",
+        "RED_400": "#06d3cc",
+        "ORANGE_345": "#156564",
+        "RED_560": "#06d3cc",
+        "GREEN_345": "#156564",
+        "BLUE_345": "#156564",
+        "WHITE_500": "#ffffff",
+        "BLACK_500": "#2b2b2b"
+       
+    },
+
+    "plus": {
+    "version": 0,
+    "iconpack": "rosiecord-iconsax",
+    "icons": {
+          "StatusStreaming": "#5865F2",
+          "StatusMobileOnline": "#06d3cc",
+          "StatusIdle": "#00fff6",
+          "StatusDND": "#156564",
+          "StatusOffline": "#156564",
+          "StatusOnline": "#06d3cc"
+          }
+    },
+    "spec": 2
+}
