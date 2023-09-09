@@ -1,0 +1,148 @@
+{
+    "name": "CandyShop",
+    "description": "cute :3",
+    "authors": [
+        {
+            "name": "VM_Akari",
+            "id": "499287211381096458"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#ffffff"
+        ],
+        "HEADER_SECONDARY": [
+            "#b8b8b8"
+        ],
+        "TEXT_NORMAL": [
+            "#e3e3e3"
+        ],
+        "TEXT_MUTED": [
+            "#b8b8b8"
+        ],
+        "TEXT_DANGER": [
+            "#5865F2"
+        ],
+        "TEXT_LINK": [
+            "#f1b0c3"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#b8b8b8"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#DCDDDE"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#a0b5f2"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#969696"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#303030"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#transparent"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#303030"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#transparent"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#303030"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#3f3f3f"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#2b2b2b"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#transparent"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#2b2b2b"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#303030"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#303030"
+        ],
+        "KEYBOARD": [
+            "#303030"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#ffffff"
+        ],
+        "CHANNEL_ICON": [
+            "#a0b5f2"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#b8b8b8"
+        ],
+        "CHAT_BACKGROUND": [
+            "#303030"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY": "#303030",
+        "PRIMARY_100": "#ffffff",
+        "PRIMARY_200": "#b8b8b8",
+        "PRIMARY_300": "#f1b0c3",
+        "PRIMARY_360": "#b8b8b8",
+        "PRIMARY_400": "#f1b0c3",
+        "PRIMARY_500": "#2b2b2b",
+        "PRIMARY_600": "#303030",
+        "PRIMARY_630": "#303030",
+        "PRIMARY_660": "#2b2b2b",
+        "PRIMARY_700": "#2b2b2b",
+        "PRIMARY_800": "#2b2b2b",
+        "PRIMARY_900": "#2b2b2b",
+        "YELLOW_300": "#a0b5f2",
+        "BRAND_260": "#a0b5f2",
+        "BRAND_360": "#a0b5f2",
+        "BRAND_500": "#a0b5f2",
+        "BRAND_560": "#a0b5f2",
+        "GREEN_360": "#a0b5f2",
+        "RED_400": "#a0b5f2",
+        "ORANGE_345": "#a0b5f2",
+        "RED_560": "#06d3cc",
+        "GREEN_345": "#a0b5f2",
+        "BLUE_345": "#a0b5f2",
+        "WHITE_500": "#ffffff",
+        "BLACK_500": "#303030"
+       
+    },
+
+    "plus": {
+    "version": 0,
+    "iconpack": "rosiecord-iconsax",
+    "icons": {
+          "StatusStreaming": "#5865F2",
+          "StatusMobileOnline": "#f1b0c3",
+          "StatusIdle": "#f1b0c3",
+          "StatusDND": "#f1b0c3",
+          "StatusOffline": "#a0b5f2",
+          "StatusOnline": "#f1b0c3"
+          }
+    },
+    "spec": 2
+}
